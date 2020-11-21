@@ -1,0 +1,65 @@
+/* ==================== FONTS =================================== */
+
+.ralewaydotsregular{
+  font-family:"RalewayDots-Regular";
+}
+
+.cookie{
+  font-family:"Cookie Regular";
+}
+
+.customfont{
+  font-family:"customfont";
+}
+
+.delvonthin{
+  font-family:"Delvon Thin";
+}
+
+.SHAIMAADEMORegular{
+  font-family:"SHAIMAADEMORegular";
+}
+/* ==================== FONTS =================================== */
+.text-exampleImgXXX { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  width: 100%; 
+  height:100%;
+  text-align: center; 
+  position: relative;
+  display: inline-block; 
+  padding:0px;
+  margin:0px;
+}
+
+
+.text-exampleImgYYY { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  text-align: center; 
+  position: relative;
+  display: inline-block; 
+  padding:0px;
+  margin:0px;
+  left:30%;
+}
+
+
+.titlex3{
+  color:#eb561b;
+  margin-top:5px;
+  font-size: 13px;
+  text-decoration: line-through;
+
+}
+
+.cls1{
+
+}
+.cls2{
+  background-image: linear-gradient(to left bottom, #28e222a8, #ae8ef7);
+}

@@ -1,0 +1,449 @@
+git init
+git status
+git remote add origin "https://github.com/narresh369/BBAppx.git"
+
+git add -A
+ls
+
+
+ ssh-keygen
+
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/DELL/.ssh/id_rsa):
+Created directory '/c/Users/DELL/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/DELL/.ssh/id_rsa
+Your public key has been saved in /c/Users/DELL/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:dD9afIceCcJir75uw44tCccdoN/Gcwc2vRO0OGC59Pw DELL@DESKTOP-OL99GNM
+The key's randomart image is:
++---[RSA 3072]----+
+|         .       |
+|      . =.  .    |
+|     . ++=++..   |
+|    .  oo+O++. o |
+|     o +So.==o= .|
+|    . + *..oE+ o |
+|     o +.o.. ..  |
+|      o++        |
+|      .=*o       |
++----[SHA256]-----+
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$ ^C
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$ cat c/Users/DELL/.ssh/id_rsa.pub
+cat: c/Users/DELL/.ssh/id_rsa.pub: No such file or directory
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$ cat /c/Users/DELL/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCfuHdk1deo08KYA/xjip8dzVtOBg1ekrwT6pM4Yv+3W32Bj/2M6rL1tr9NM++a8wwDsgfgNzSrDT5WFta98t13Q7L52iqQM2Isq6wOnI4ELrezGcltx+sKM+2Tu3nAV7cxwZiezGppz5G79HFJSpv613xXHVywgqNE6z7K5WIpSKRmpxzemmbuc1AcxJNShDYXZ4iFvJDzuJF+l/4ZxtcLTSQW49brCkHA2N34nOwAyZMWaR7resEZheSGzfOgODef8OjvAGR+CO5Br0Cx4asY35adk4Phtt7Sb0tJLfvbp1TZPuw2HacgXNL+o903v2iZ3IjB3UX/E6zNQebeiEGpfm/zVxKyfs8q9sT3y8njSxGZj/sjUSvweuJu37rNssAzhbx0opfzX6APbZaO0rIuhVfX6eWVNoNQBtXaDQj1Uq+aFHXByyZwRWshUSsUK451JWGZvKdyqkhpl5JZ4mTEl00gdQSmFkt3rIzngaTlTlvbqR/tWtwO7UQpymzNstc= DELL@DESKTOP-OL99GNM
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$
+
+Passphrase:BBAppx123
+
+ssh -T git@github.com
+
+
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$ ssh -T git@github.com
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,13.234.176.102' (RSA) to the list of known hosts.
+Enter passphrase for key '/c/Users/DELL/.ssh/id_rsa':
+Hi narresh369! You've successfully authenticated, but GitHub does not provide shell access.
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$
+
+ssh -T git@github.com:narresh369/BBAppx.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================================================================================
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit
+$ git init
+Initialized empty Git repository in E:/BBAppxGit/.git/
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        BBAppx-17-11-2020.zip
+        BBAppx-release-key.keystore
+        PRODUCTION-BUILD.txt
+        STEPS-Producction.txt
+        STEPS.txt
+        angular.json
+        browserslist
+        config.xml
+        icon.png
+        ionic.config.json
+        karma.conf.js
+        package-lock.json
+        package.json
+        splash.png
+        src/
+        tsconfig.app.json
+        tsconfig.json
+        tsconfig.spec.json
+        tslint.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$ git remote add origin "https://github.com/narresh369/BBAppx.git"
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        BBAppx-17-11-2020.zip
+        BBAppx-release-key.keystore
+        PRODUCTION-BUILD.txt
+        STEPS-Producction.txt
+        STEPS.txt
+        angular.json
+        browserslist
+        config.xml
+        icon.png
+        ionic.config.json
+        karma.conf.js
+        package-lock.json
+        package.json
+        splash.png
+        src/
+        tsconfig.app.json
+        tsconfig.json
+        tsconfig.spec.json
+        tslint.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$ git add -A
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in angular.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in browserslist.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in config.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in ionic.config.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in karma.conf.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package-lock.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/aboutx/aboutx-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/aboutx/aboutx.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/aboutx/aboutx.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/aboutx/aboutx.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/aboutx/aboutx.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/add-item-to-cart/add-item-to-cart-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/add-item-to-cart/add-item-to-cart.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/add-item-to-cart/add-item-to-cart.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/add-item-to-cart/add-item-to-cart.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/add-item-to-cart/add-item-to-cart.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app.component.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app.component.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app.component.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app.component.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/bill-cart-list/bill-cart-list-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/bill-cart-list/bill-cart-list.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/bill-cart-list/bill-cart-list.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/bill-cart-list/bill-cart-list.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/bill-cart-list/bill-cart-list.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/cart-items-to-db.service.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/cart-items-to-db.service.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/categories-detail/categories-detail-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/categories-detail/categories-detail.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/categories-detail/categories-detail.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/categories-detail/categories-detail.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/categories-detail/categories-detail.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/components/components.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/components/image-shell/image-shell.component.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/components/image-shell/image-shell.component.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/components/image-shell/image-shell.component.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/components/text-shell/text-shell.component.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/components/text-shell/text-shell.component.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/components/text-shell/text-shell.component.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/exitx/exitx-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/exitx/exitx.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/exitx/exitx.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/exitx/exitx.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/exitx/exitx.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/homexshell/homexshell-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/homexshell/homexshell-shell.resolver.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/homexshell/homexshell.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/homexshell/homexshell.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/homexshell/homexshell.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/homexshell/homexshell.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/homexshell/sample-shell.model.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/homexshell/shell-elements.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/homexshell/shell.provider.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/landing/landing-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/landing/landing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/landing/landing.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/landing/landing.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/landing/landing.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/notifications/notifications-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/notifications/notifications.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/notifications/notifications.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/notifications/notifications.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/notifications/notifications.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/order-detail/order-detail-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/order-detail/order-detail.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/order-detail/order-detail.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/order-detail/order-detail.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/order-detail/order-detail.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/ordersx/ordersx-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/ordersx/ordersx.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/ordersx/ordersx.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/ordersx/ordersx.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/ordersx/ordersx.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/progressive-shell-resolver/progressive-shell-resolver.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/progressive-shell-resolver/progressive-shell-resolver.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/progressive-shell-resolver/progressive-shell-resolver.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/progressive-shell-resolver/progressive-shell.resolver.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/progressive-shell-resolver/sample-shell.model.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/progressive-shell-resolver/shell-elements.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/progressive-shell-resolver/shell.provider.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/services/masterdetail.service.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/shared/ordersx.service.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/splashx/splashx-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/splashx/splashx.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/splashx/splashx.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/splashx/splashx.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/splashx/splashx.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/testx/testx-routing.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/testx/testx.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/testx/testx.page.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/testx/testx.page.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/testx/testx.page.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/css/jquery.ui.all.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/css/magic.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/css/stagger.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/css/sweetalert2.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/js/jquery-1.4.2.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/js/jquery-ui.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/js/jquery.ui.slider.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/jspdf/dom-to-image.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/jspdf/jspdf.debug.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/jspdf/jspdf.min-Old.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/jspdf/jspdf.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/jspdf/jspdf.plugin.addimage.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/jspdf/jspdf.plugin.autotable.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/jspdf/jspdf.umd.min.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/jspdf/png/FileSaver.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/jspdf/png/png.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/jspdf/png/zlib.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/sample-data/page-data.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/assets/shapes.svg.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/environments/environment.prod.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/environments/environment.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/global.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/main.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/polyfills.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/test.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/theme/variables - Copy.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/theme/variables.scss.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/zone-flags.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tsconfig.app.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tsconfig.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tsconfig.spec.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tslint.json.
+The file will have its original line endings in your working directory
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$
+=================================================================================
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$ ls
+ BBAppx-17-11-2020.zip         browserslist        splash.png
+ BBAppx-release-key.keystore   config.xml          src/
+'GIT STEPS.txt'                icon.png            tsconfig.app.json
+ PRODUCTION-BUILD.txt          ionic.config.json   tsconfig.json
+ STEPS-Producction.txt         karma.conf.js       tsconfig.spec.json
+ STEPS.txt                     package-lock.json   tslint.json
+ angular.json                  package.json
+
+DELL@DESKTOP-OL99GNM MINGW64 /e/BBAppxGit (master)
+$
+=================================================================================
+
+=================================================================================
+
+=================================================================================
+
+=================================================================================
+
+=================================================================================
+
+=================================================================================
+
+=================================================================================
+
+=================================================================================
+
+=================================================================================

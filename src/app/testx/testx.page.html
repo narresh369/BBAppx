@@ -1,0 +1,449 @@
+<ion-header>
+  <ion-toolbar color="navy">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end" (click)="gotoNotifications()">
+      <ion-icon style="font-size: 25px;padding-right:10px;" name="notifications"></ion-icon>
+    </ion-buttons>
+    <ion-title  class="cookie text-exampleImgXXX" style="font-size: 25px;">Under Construction</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<!-- <ion-content class="animated slideInRight" padding> -->
+  <ion-content no-padding no-bounce>
+
+  <!--   <div *ngFor="let x of xxxxx">
+      {{x.title}}
+      </div> -->
+
+      
+      <ion-row style="padding:5px">
+      
+        <ion-col size="3" (click)="categoriesDetail(item)" class="buttonx"
+         *ngFor="let item of cats" style="background-color: #FFF; padding: 10px;">
+     
+     
+       <ion-img *ngIf="item?.cover" class="xx ionimg-curved"
+                   [src]="item?.cover" 
+                   alt="" style="width: 100%; height: 80%;object-fit: cover;"></ion-img>
+             
+           <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;"
+             [ngClass]="{'text-loaded': item?.title}">
+             <span style="font-weight: bold" class="xx cookie">{{ item?.title }}</span>
+           </h5>
+         
+         </ion-col>
+       </ion-row>
+ 
+<br>
+
+  <!--   <ion-grid class="ion-no-padding">
+      <ion-row class="ion-no-padding">
+        <ion-col class="ion-text-center ion-no-padding">
+          <ion-slides pager="true" [options]="slideOpts">
+              <ion-slide class="ion-no-padding" *ngFor="let item of iconLblsRand;">              
+                <img src="../../assets/home/testx/{{item.id}}.jpg">
+              </ion-slide>
+            </ion-slides>          
+          </ion-col>
+      </ion-row>
+      </ion-grid> -->
+
+
+
+
+<ion-grid style="margin-top:10px">
+  <ion-row style="border-bottom:1px solid #8282df;padding:10px;margin:5px" class="animated flipInX _{{i}}"
+  *ngFor="let item of itemsBestOffers;let i = index">
+    <ion-col size="4">
+      <ion-row>
+        <ion-col>
+          <ion-badge style="color:white;margin-left:-80px" color="badgexxxx">
+            {{item.label1}}          
+          </ion-badge>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-avatar style="margin-left:10px;width:80px;height:80px;border:2px solid #c9c9f0">
+            <ion-img [src]="item.vid"></ion-img>
+          </ion-avatar>  
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-icon style="margin-top:-10px;margin-left:40px" color="{{item.color}}" name="aperture"></ion-icon>
+          <ion-label>
+          <p class="cookie" style="margin-top:5px;font-size: 20px;color:red;font-weight: 200;">Best Price</p>
+          <p class="cookie" style="margin-top:5px;font-size: 20px;color:navy;font-weight: 200;">Hurry Up</p> 
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+
+    <ion-col size="4">
+      <div>
+      <ion-label>
+        <div class="cookie" style="margin-top:5px;font-size: 25px;font-weight: bold;">{{item.itemname}} </div> 
+        <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.icon}}</p>
+        <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.number}}</p> 
+        <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.label}}</p> 
+        <ion-button class="buttonx" style="color:white;" fill="outline" color="danger">
+          ADD          
+        </ion-button>       
+        </ion-label>  
+        </div>    
+    </ion-col>
+
+    <ion-col  size="4">
+      <div>
+      <ion-label>
+        <div class="cookie" 
+        style="margin-top:5px;font-size: 20px;border:1px solid #ec6262;padding:5px;
+        background-image: linear-gradient(to left bottom, #d3fcd1a8, #c5b4eb);
+        box-shadow: 2px 2px 3px 3px #d9d9e6;
+        ">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>       
+        <ion-badge slot="end" style="color:white;margin-top:5px" color="badgexxxxx">
+          Off {{item.label1}}          
+        </ion-badge>      
+        </ion-label> 
+        </div>    
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+      <!-- <ion-item>
+        <ion-label>Toggle</ion-label>
+        <ion-toggle slot="end" checked></ion-toggle>
+      </ion-item> -->
+
+      <ion-list padding *ngFor="let item of itemsBestOffers">    
+
+        <ion-item lines="none">
+          <ion-avatar style="width:80px;height:80px">
+            <ion-img [src]="item.vid"></ion-img>
+          </ion-avatar>    
+          <ion-label style="margin-left: 10px;">
+            <div class="cookie" style="margin-top:5px;font-size: 20px;">{{item.itemname}} </div> 
+            <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.icon}}</p>
+            <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.number}}</p> 
+            <ion-badge slot="end" style="color:white;" color="badgexxxxx">
+              Off {{item.label1}}          
+            </ion-badge>         
+          </ion-label>         
+          <ion-button slot="end" class="buttonx" style="color:white;" fill="outline" color="danger">
+            ADD          
+          </ion-button>
+        </ion-item>
+      </ion-list>
+
+     <!--  <ion-list padding *ngFor="let item of itemsBestOffers">
+        <ion-button slot="end" style="color:white;" color="badgexxxx">
+          ADD          
+        </ion-button>
+        <ion-item padding  slot="start">
+          <ion-avatar style="width:80px;height:80px">
+            <ion-img [src]="item.vid"></ion-img>
+          </ion-avatar>    
+          <ion-label style="margin-left: 10px;">
+            <div class="cookie" style="margin-top:5px;font-size: 20px;">{{item.itemname}}</div>
+            <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.icon}}</p>
+            <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.number}}</p>
+          </ion-label>
+          
+        <ion-badge slot="end" style="color:white;" color="badgexxxx">
+        {{item.label1}}          
+      </ion-badge>
+        </ion-item>    
+      </ion-list> -->
+
+      <!-- <ion-list padding *ngFor="let item of itemsBestOffers">
+        <ion-item padding  slot="start">
+          <ion-avatar style="width:80px;height:80px">
+            <ion-img [src]="item.vid"></ion-img>
+          </ion-avatar>        
+          <ion-label style="margin-left: 10px;">
+            <div class="cookie" style="margin-top:5px;font-size: 20px;">{{item.itemname}}</div>
+            <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.icon}}</p>
+            <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.number}}</p>
+          </ion-label>
+          <ion-badge style="color:white;" color="badgexxxx">
+          {{item.label1}}          
+        </ion-badge>
+        </ion-item>
+      </ion-list> -->
+
+     <!--  <ion-list padding *ngFor="let item of itemsBestOffers">
+        <ion-item padding  slot="start">
+          <ion-avatar style="width:80px;height:80px">
+            <ion-img [src]="item.vid"></ion-img>
+          </ion-avatar>        
+          <ion-label style="margin-left: 10px;">
+            <div class="cookie" style="margin-top:5px;font-size: 20px;">{{item.itemname}}</div>
+            <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.icon}}</p>
+            <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.number}}</p>
+          </ion-label>
+          <ion-badge style="color:white; width:42px;
+          height:42px;        
+          border-radius: 20px;" color="badgexxxx">
+          <div style="margin-top: 10px">{{item.label1}}
+          </div>
+        </ion-badge>
+        </ion-item>
+      </ion-list> -->
+     
+
+<!-- ================== WORKING PERFECT ========================= -->
+<ion-grid>
+  <ion-row justify-content-center align-items-center>
+    <ion-col size="3" *ngFor="let item of itemsBestOffers">
+      <div style="border:1px solid #1ec039;border-radius: 5px;margin:5px;padding:8px">
+        <div class="flex">
+          <ion-avatar style="width:40px;height:40px">
+            <ion-img [src]="item.vid"></ion-img>
+          </ion-avatar>
+        </div>
+        <div class="cookie" style="margin-top:5px;font-size: 15px;">{{item.itemname}}</div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<!-- ================== WORKING PERFECT ========================= -->
+
+<br>
+<div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+ <span style="font-size: 23px;color: red;" class="cookie">Dussera Offers</span>
+ </div>
+ <ion-grid>
+   <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+     <ion-col (click)="gotoConstruction(item)" class="buttonx" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+     class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}" 
+     *ngFor="let item of itemsDiscountsForYou;let i = index" size="4">
+
+      <ion-label  style="margin-bottom: 2px;">
+        <ion-badge slot="end" 
+        style="font-size: 13px;
+        margin-top:2px;
+        font-weight: bold;
+        color:white;
+        width:40px;
+        height:40px;        
+        border-radius: 20px;"
+          color="badgexxxxx">
+            <div style="color:white;font-weight: bold;margin-top: 10px;">{{item.label1}}</div>
+        </ion-badge>
+      </ion-label>
+
+      <ion-img *ngIf="item?.vid" class="xx ionimg-curved" [src]="item?.vid" alt=""
+        style="width: 100%; height: 40%;object-fit: cover;margin-top:10px">
+      </ion-img>
+
+      <ion-label class="ion-text-center">
+        <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" 
+        class="cookie">{{item.itemname}} | {{item.qty}}
+        </h2>
+        <p class="customfont titlex5" style="margin-bottom:-20px">Rs {{item.rate}}
+          <span style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>
+        </p>
+      </ion-label>
+
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+
+ <br>
+
+<br>
+<div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+ <span style="font-size: 23px;color: red;" class="cookie">Dussera Offers</span>
+ </div>
+ <ion-grid>
+   <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+     <ion-col (click)="gotoConstruction(item)" class="buttonx" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+     class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}" 
+     *ngFor="let item of itemsDiscountsForYou;let i = index" size="4">
+
+      <div class="ion-text-center" style="margin-bottom: -20px;">
+        <ion-badge slot="start" style="font-size: 13px;margin-top:2px;font-weight: bold;color:white;width:80%;border-radius: 10px"
+          color="badgexxxx">
+          <span style="font-weight: bold;">Off
+            <span style="color:white;font-weight: bold;">{{item.label1}}</span>
+          </span>
+        </ion-badge>
+      </div>
+
+      <ion-img *ngIf="item?.vid" class="xx ionimg-curved" [src]="item?.vid" alt=""
+        style="width: 100%; height: 40%;object-fit: cover;margin-top:30px">
+      </ion-img>
+
+      <ion-label class="ion-text-center">
+        <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" 
+        class="cookie">{{item.itemname}} | {{item.qty}}
+        </h2>
+        <p class="customfont titlex5" style="margin-bottom:-20px">Rs {{item.rate}}
+          <span style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>
+        </p>
+      </ion-label>
+
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+
+ <br>
+
+  <!-- <div>hello world</div> -->
+ <!--  <div class="fullheight xc">    
+    <img src="assets/imgs/uc.gif">
+  </div> -->
+
+<!-- 1111111111111111111111111111111111111111 -->
+<!--   <ion-grid fixed>
+    <ion-row>
+      <ion-col>
+       <img src="assets/imgsx/article1.png">
+      </ion-col>
+      <ion-col>
+        <img src="assets/imgsx/article2.png">
+      </ion-col>    
+    </ion-row>
+</ion-grid>   -->
+
+<!-- 222222222222222222222222222222222222222 -->
+<!-- <ion-grid fixed>
+  <ion-row>
+    <ion-col size="4">
+     <img src="assets/imgsx/article1.png">
+    </ion-col>
+    <ion-col>
+      <img src="assets/imgsx/article2.png">
+    </ion-col>    
+    <ion-col size="1">
+      <img src="assets/imgsx/article2.png">
+    </ion-col>    
+  </ion-row>
+</ion-grid>  -->
+
+<!-- <ion-grid class="grid-of-icons">
+  <ion-row>
+    <ion-col size="3" *ngFor="let item of itemsBestOffers">
+     <img [src]="item.vid">
+    </ion-col>   
+  </ion-row>
+</ion-grid>  -->
+
+<!-- <ion-grid>
+  <ion-row>
+    <ion-col size="2" push="6"><div>111111</div></ion-col>
+    <ion-col size="6" pull="2"><div>2222222222</div></ion-col>
+    <ion-col size="4"><div>333333</div></ion-col>
+  </ion-row>
+</ion-grid> -->
+
+<!-- https://www.youtube.com/watch?v=ytrBVpitvIM -->
+<!-- <ion-grid style="background-color: black;">
+  <ion-row>
+    <ion-col size-sm="6" size-md="12" style="background-color: red;"><div>111111</div></ion-col>
+    <ion-col  style="background-color: green;"><div>2222222222</div></ion-col>
+    <ion-col  style="background-color: blue;"><div>333333</div></ion-col>
+  </ion-row>
+</ion-grid> -->
+
+
+<!-- <ion-grid>
+  <ion-row>
+    <ion-col>
+      <div>
+     <img src="assets/imgsx/article1.png">
+     </div>
+    </ion-col>
+    <ion-col>
+      <div>
+      <img src="assets/imgsx/article2.png">
+      </div>
+    </ion-col>    
+    <ion-col>
+      <div>
+      <img src="assets/imgsx/article2.png">
+      </div>
+    </ion-col>    
+  </ion-row>
+</ion-grid>  
+ -->
+
+
+<!--  <ion-grid class="grid-of-icons">
+  <ion-row justify-content-center align-items-center style="height: 100%">
+    <ion-col size="3" *ngFor="let item of itemsBestOffers" class="flex">
+      <div class="ion-text-center">
+        <ion-avatar>
+     <ion-img [src]="item.vid"></ion-img>     
+    </ion-avatar>
+    <div class="cookie" style="margin-top:5px;font-size: 18px;">{{item.itemname}}</div>
+     </div>
+    </ion-col>   
+  </ion-row>
+</ion-grid> -->
+
+
+<!-- <ion-grid no-padding>
+  <ion-row>
+    <ion-col class="flex">
+      <h1>ion-grid</h1>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+
+
+
+<!-- //SELECT OPTIONS RELATED -->
+<!-- <ion-item>
+  <ion-label position="stacked">Gender</ion-label>
+  <ion-select placeholder="Select One">
+    <ion-select-option value="f">Female</ion-select-option>
+    <ion-select-option value="m">Male</ion-select-option>
+  </ion-select>
+</ion-item>
+
+<ion-item lines="none">
+  <ion-label position="stacked">Gender</ion-label>
+  <select>
+    <option disabled selected>Select One</option>
+    <option value="f">Female</option>
+    <option value="m">Male</option>
+  </select>
+</ion-item> -->
+
+
+
+  <!-- <div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+    <span style="font-size: 23px;color: red;" class="cookie">Best Offers</span>
+    </div>
+    <ion-grid>
+      <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+        <ion-col (click)="gotoConstruction(item)" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+        class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}" 
+        *ngFor="let item of itemsBestOffers;let i = index" size="4">
+        <div class="ion-text-center" style="margin-bottom: 15px;">
+        <ion-badge class="customfont" style="font-size: 13px;margin-top:10px;font-weight: bold;color:darkred" 
+        color="badgexx"><span style="font-weight: bold;">Off <span style="color:navy;font-weight: bold;">{{item.label1}}</span></span></ion-badge>       
+        </div>           
+          <ion-img *ngIf="item?.vid" class="xx ionimg-curved"
+              [src]="item?.vid" 
+              alt="" style="width: 100%; height: 40%;object-fit: cover;"></ion-img>
+          <ion-label class="ion-text-center" style="margin-bottom:10px">
+            <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" 
+            class="cookie">{{item.itemname}} | {{item.qty}}</h2>
+            <p class="customfont titlex2">Rs {{item.rate}}
+              <span  style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>   
+            </p>         
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
+
+</ion-content>

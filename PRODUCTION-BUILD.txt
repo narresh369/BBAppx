@@ -1,0 +1,52 @@
+https://ionicframework.com/docs/v1/guide/publishing.html
+
+1111111111111111111111111111111111111111111111
+ionic cordova plugin rm cordova-plugin-console
+
+2222222222222222222222222222222222222222222222
+ionic cordova build --release android
+
+3333333333333333333333333333333333333333333333
+keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+
+
+4444444444444444444444444444444444444444444444
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore HelloWorld-release-unsigned.apk alias_name
+
+
+5555555555555555555555555555555555555555555555
+zipalign -v 4 HelloWorld-release-unsigned.apk HelloWorld.apk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=============================================================================
+
+E:\>cd bbappx
+
+E:\BBAppx>ionic cordova plugin rm cordova-plugin-console
+> cordova.cmd plugin remove cordova-plugin-console
+Plugin "cordova-plugin-console" is not present in the project. See `cordova plugin list`.
+[ERROR] An error occurred while running subprocess cordova.
+
+        cordova.cmd plugin remove cordova-plugin-console exited with exit code 1.
+
+        Re-running this command with the --verbose flag may provide more information.
+
+E:\BBAppx>

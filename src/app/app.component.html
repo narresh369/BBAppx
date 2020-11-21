@@ -1,0 +1,69 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list id="inbox-list">
+<!--  <ion-list-header>Inbox</ion-list-header>
+<ion-note>hi@ionicframework.com</ion-note>
+-->
+
+ <ion-list-header  style="background-image: linear-gradient(to left bottom, #28e222a8, #ae8ef7);">
+   
+  <ion-icon style="font-size: 25px;color:navy;background:#d2f5e9;border:1px solid #ababee;padding:10px;border-radius:50%" name="person">
+  </ion-icon>
+  <span class="cookie" style="margin-top:18px;margin-left:10px;font-size: 25px;color:navy;">Guest User
+    <p style="font-size: 18px;color:#db112c;margin-top:-5px">test@test.com</p>
+  </span>
+   </ion-list-header>
+ <!-- <ion-note>hi@ionicframework.com</ion-note> -->
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item style="margin-top:10px"
+            (click)="selectedIndex = i" routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" [class.selected]="selectedIndex == i">
+             
+            <!-- <ion-icon style="color:navy" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label class="cookie" style="color:navy;font-size: 25px;">{{ p.title }}</ion-label> -->
+
+            <!--   <ion-icon 
+              [ngClass]="{'powerbtn':p.title === 'Exit'}"
+              style="color:navy" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+
+              <ion-label 
+              [ngClass]="{'powerbtn':p.title === 'Exit'}"
+               style="color:navy;font-size: 25px;">{{ p.title }}</ion-label> -->
+
+
+
+               <ion-icon [style.color]="getColor(p.title)" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label class="cookie" [style.color]="getColor(p.title)"><span style="font-size: 25px;">{{ p.title }}</span></ion-label>
+
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+<!-- 
+        <ion-list id="labels-list">
+          <ion-list-header>Labels</ion-list-header>
+
+          <ion-item *ngFor="let label of labels" lines="none">
+            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
+            <ion-label>{{ label }}</ion-label>
+          </ion-item>
+        </ion-list> -->
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
+
+<!-- <ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/home" class="ios" tab="home">
+      <ion-icon name="list"></ion-icon>
+      <ion-label>Appointments</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/make-appointment" class="ios" tab="make-appointment">
+      <ion-icon name="add-circle"></ion-icon>
+      <ion-label>Book Appointment</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs> -->

@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar color="navy">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon *ngIf="!refreshFlg" style="font-size: 25px;padding-right:10px;" name="refresh" class="buttonx" 
+      (click)="refreshDB()"></ion-icon>
+      <ion-spinner *ngIf="refreshFlg" style="color:white" name="bubbles"></ion-spinner>
+    </ion-buttons>
+    <ion-title class="cookie text-exampleImgXXX" style="font-size: 25px;">Orders</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="animated slideInDown">
+
+    <div class="text-exampleImgYYY">
+      <ion-avatar style="height:150px;width:150px;margin-top:20px">
+      <ion-icon style="height:70px;width:70px;" name="newspaper"></ion-icon>
+      </ion-avatar> 
+      <div style="font-size: 35px;margin-top:-70px;padding-bottom:10px" class="cookie">Orders List</div>
+    </div>
+
+    <div style="
+    top: 30%;" *ngIf="itemsFinal.length === 0">
+    <img style="margin-top:-50px" src="../../assets/logos/emptycart.gif">
+    <div style="margin-left:120px" class="animated infinite pulse">No Data Found</div>
+    </div>
+ 
+   
+        <ion-list no-lines class="animated slideInUp _{{i}}" 
+        *ngFor="let item of itemsFinal;let i = index">
+
+        <ion-item borders="none" (click)="showChevronDetails(item,itemsDiscounts,i)">
+        <ion-avatar slot="start" style="height:55px;width:55px;border:1px solid #3030e4;padding:5px">
+          <img src="../../assets/logos/bb.jpg">
+        </ion-avatar>
+        <ion-icon name="arrow-forward-outline" slot="end" *ngIf="!item.chevFlg"></ion-icon>
+        <ion-icon name="arrow-down-outline" slot="end" *ngIf="item.chevFlg"></ion-icon>
+        <ion-label>
+          <h2 style="font-weight: 600;">{{item.itemz[0].billno}}</h2>  
+          <p>{{item.itemz[0].createdttm}}</p>        
+        </ion-label>
+      </ion-item>
+  
+      <ion-grid  *ngIf="item.chevFlg" 
+        [ngClass]="(item.chevFlg === 'False')?'animated slideInUp':'animated slideInDown'">
+          <ion-row style="margin-top:10px!important">
+
+            <ion-col size="2" style="border:0;display:flex;justify-content: center;align-items: center;
+            text-align: center;margin:0 auto;
+            color:brown;border-right:1px solid #db5d5d;">
+              <div  borders="none">
+                <ion-icon style="font-size: 35px;padding-right:10px;color:brown;" slot="start" name="document-text" class="buttonx" 
+                (click)="downloadPDF_Mobile_ImpGood(item.itemz[0].billno,item.itemz[0].createdttm,
+                item.itemz[0].totalQtyx,item.itemz[0].totalAmtx,item.itemz[1].cartitems)"></ion-icon>
+            </div>
+            </ion-col>
+
+            <ion-col size="10" style="border:0">
+              <ion-label style="text-align:left;">
+                <ion-grid  style="border:0">
+                  <ion-row   style="border:0">
+                    <ion-col style="text-align: left;border: 0;"><ion-badge color="navy"  style="margin-left:0.5px;font-size: 14px;color:white">Bill # : {{item.itemz[0].billno}}</ion-badge></ion-col>
+                    <ion-col style="text-align: right;border: 0;"><ion-badge color="red" style="color:white">{{item.itemz[0].totalQtyx}} | {{item.itemz[0].totalAmtx | number : '1.2-2'}}</ion-badge></ion-col>
+                  </ion-row>
+                </ion-grid>                           
+                  <h2 class="cookie" 
+                  style="text-align:left;font-size: 25px;font-weight: 200;margin-left:10px">{{item.itemz[0].createdttm}}</h2>           
+              
+                  <div *ngFor="let itemx of item.itemz[1].cartitems;let j = index">
+              
+                    <h2 class="cookie" 
+                    style="text-align:left;font-size: 25px;font-weight: 200;margin-left:10px">{{itemx.name}}</h2>  
+                    <p style="margin-left:10px"><ion-icon name="aperture"></ion-icon>:&nbsp;Qty/Rate ({{itemx.qty}}) / {{itemx.rate}}
+                      <span class="customfont titlex3">{{itemx.oldrate}}</span></p>     
+                    <p style="margin-left:10px"><ion-icon name="notifications"></ion-icon>:&nbsp;Units {{itemx.qtyx}}</p> 
+                    <p style="margin-left:10px;color:red"><ion-icon name="arrow-down-outline"></ion-icon>:&nbsp;Disc% {{itemx.discount}}</p> 
+                    <p style="margin-left:10px"><ion-icon name="pricetag-outline"></ion-icon>:&nbsp;Unit Rate After Disc% {{itemx.amtwithdiscx | number : '1.2-2'}}</p> 
+                    <!-- <p style="margin-left:10px"><ion-icon name="basketball-outline"></ion-icon>:&nbsp;Total {{itemx.amtx}}</p> --> 
+                    <p style="margin-left:10px;color:green;font-weight: bold;"><ion-icon name="cash-outline"></ion-icon>:&nbsp;Total {{getFormattedTotal(itemx.amtwithdiscx , itemx.qtyx)}}</p>
+                    <p style="margin-left:10px"><ion-icon name="megaphone-outline"></ion-icon>:&nbsp;{{itemx.description}}</p> 
+                    <br>
+                  </div>        
+                            
+              </ion-label>
+            </ion-col>
+
+            </ion-row>
+            </ion-grid>
+
+      </ion-list>  
+
+</ion-content>

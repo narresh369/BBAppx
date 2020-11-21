@@ -1,0 +1,203 @@
+ /* ==================== FONTS =================================== */
+
+ .ralewaydotsregular{
+  font-family:"RalewayDots-Regular";
+}
+
+.cookie{
+  font-family:"Cookie Regular";
+}
+
+.customfont{
+  font-family:"customfont";
+}
+
+.delvonthin{
+  font-family:"Delvon Thin";
+}
+
+.SHAIMAADEMORegular{
+  font-family:"SHAIMAADEMORegular";
+}
+/* ==================== FONTS =================================== */
+.fullheight {
+    height: 100%;
+  }
+  
+  .xc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  //=============================================
+  .text-exampleImgXXX { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+    height:100%;
+    text-align: center; 
+    position: relative;
+    display: inline-block; 
+    padding:0px;
+    margin:0px;
+  }
+//================================ IONIC GRID ================== 111111111 =======================
+//https://youtu.be/c3CrC9lL53k
+/* ion-col{
+  //--ion-grid-columns:12;//this is by default...12 columns per row..we can change it to whatever we want
+  --ion-grid-columns:12;//this is by default...12 columns per row..we can change it to whatever we want
+  background: cadetblue;
+  text-align: center;
+}
+ion-grid{
+  --ion-grid-padding:0;
+  --ion-grid-column-padding:0;
+  //--ion-grid-width-xl:360px; 
+}
+.grid-of-icons{
+  --ion-grid-column-padding:12px;
+} */
+//================================ IONIC GRID ================== 111111111 =======================
+
+//================================ IONIC GRID ================== 222222222 =======================
+ion-col{
+  //--ion-grid-columns:12;//this is by default...12 columns per row..we can change it to whatever we want
+  --ion-grid-columns:12;//this is by default...12 columns per row..we can change it to whatever we want
+  background: white;
+  text-align: center;
+  /* border:1px solid navy; */
+  /* margin:10px; */
+ /*  margin:1px; */
+ /*  border-radius: 15px;
+  padding: 2px; */
+}
+ion-grid{
+  --ion-grid-padding:0;
+  --ion-grid-column-padding:0;
+  /* --ion-grid-width-xl:360px; */
+}
+.grid-of-icons{
+  --ion-grid-column-padding:12px;  
+}
+//================================ IONIC GRID ================== 222222222 =======================
+/* div{
+  overflow: hidden;
+  background-size: contain;
+  text-align: center;
+}
+div img {
+  display: block;
+  width: 15vw;
+  height: 10vh;
+  object-fit: cover;
+} */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* select {
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  background: #fbfbfb;
+  width: 100%;
+  height: 34px;
+} */
+
+  //=================== CIRCLE ION-IMAGE ==============================
+  .ionimg-curved{
+    border-radius: 10px !important;
+    overflow: hidden; 
+  }
+  .ionimg-circle{   
+    border-radius: 50% !important;
+    overflow: hidden;
+  }
+  //ALSO IN THE FILE src\app\progressive-shell-resolver\shell-elements.scss....UNCOMMENT THE FOLLOWING
+   /* =========== FOR CIRCLED SHELL UNCOMMENT THIS =========== */
+  /* border-radius: 50% !important;
+  overflow: hidden; */
+  /* =========== FOR CIRCLED SHELL UNCOMMENT THIS =========== */
+  //=================== CIRCLE ION-IMAGE ==============================
+  .titlex3{
+    color:#d10d48;
+    margin-top:5px;
+    font-size: 12px;
+    text-decoration: line-through;
+
+  }
+  .titlex2{
+    color:#0f0e0f;
+    margin-top:5px;
+    font-size: 14px;
+  }
+
+  .titlex4{
+    color:#d8abb8;
+    margin-top:5px;
+    font-size: 12px;
+    text-decoration: line-through;
+  }
+  .titlex5{
+    color:black;
+    margin-top:5px;
+    font-size: 12px;
+  }
+  .ion-color-badgexxxx {
+    --ion-color-base: red;
+    --ion-color-base-rgb: 200,223,32;
+    --ion-color-contrast: #000000;
+    --ion-color-contrast-rgb: 0,0,0;
+    --ion-color-shade: #b0c41c;
+    --ion-color-tint: #cee236;
+  }
+  .ion-color-badgexxxxx {
+    --ion-color-base: navy;
+    --ion-color-base-rgb: 200,223,32;
+    --ion-color-contrast: #000000;
+    --ion-color-contrast-rgb: 0,0,0;
+    --ion-color-shade: #b0c41c;
+    --ion-color-tint: #cee236;
+  }
+
+  .grid-of-iconsx{
+    margin-left: -100px;
+  }
+
+   //=================== CIRCLE ION-IMAGE ==============================
+   .ionimg-curved{
+    border-radius: 10px !important;
+    overflow: hidden; 
+  }
+  .ionimg-circle{   
+    border-radius: 50% !important;
+    overflow: hidden;
+  }
+
+  .xx{
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    /* animation-iteration-count: infinite; */
+    animation-duration: 2s;
+    /* animation-direction: alternate; */
+}
+@keyframes cf3FadeInOut {
+    0% {
+    opacity:0.1;
+  }
+  45% {
+  opacity:0.25;
+  }
+  55% {
+  opacity:0.5;
+  }
+  100% {
+  opacity:1;
+  }
+  }

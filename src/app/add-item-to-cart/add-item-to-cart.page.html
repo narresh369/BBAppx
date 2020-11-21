@@ -1,0 +1,122 @@
+<ion-header>
+  <ion-toolbar color="navy">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <!-- <ion-icon style="font-size: 25px;padding-right:10px;" name="cart"></ion-icon> -->
+
+      <ion-button class="buttonx" (click)="gotoBillCartList(cartItemsToDBx)">
+        <ion-badge style="font-size: 10px;color:white" color="red">{{cartItemsToDBx.length}}</ion-badge>
+        <ion-icon style="font-size: 30px;" name="cart">
+        </ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+    <ion-title class="cookie text-exampleImgXXX" style="font-size: 25px;">{{itemdetails.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content class="animated slideInRight"> -->
+  <ion-content>
+  <div class="image_container">     
+    <ion-thumbnail>
+     <!--  <ion-img style=" position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      margin: auto;
+      max-width: 100%;
+      max-height: 100%;" src="{{itemdetails.image || 'assets/logos/bb.jpg'}}" alt="{{itemdetails.name}}"></ion-img> -->
+     <!-- class="magictime vanishIn" -->
+
+<ion-img class="animated zoomIn" style=" position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+top: 0;
+margin: auto;
+max-width: 100%;
+max-height: 100%;" [src]="itemdetails.image ? itemdetails.image : '../../assets/logos/bb.jpg'"></ion-img>
+    </ion-thumbnail>
+    </div>
+
+    <ion-item style="margin-top:15px" lines="none" class="animated zoomInUp">
+      <ion-label style="margin-top:5px;">
+        <span class="cookie" style="font-size: 35px;">{{itemdetails.name}} | {{itemdetails.qty}}</span>
+       <!--  <h1 style="margin-top:5px;font-weight: bold;color:#ffa500" class="customfont">Rs. {{itemdetails.rate}} -->
+        <h1 style="margin-top:5px;font-weight: bold;color:#ff0080" class="customfont">Rs. {{itemdetails.rate}}
+          <span class="customfont titlex3">{{itemdetails.oldrate}}</span>
+        </h1>
+      </ion-label>      
+    </ion-item>
+    
+    <ion-item style="margin-top:-10px" lines="none" class="animated zoomInUp">
+        <h1 style="margin-top:-5px;font-weight: bold;color:#5f80da" class="customfont">Disc% {{itemdetails.discount}}
+        </h1>
+    </ion-item>
+
+
+<hr style="border-top:1px solid #0B610B;margin-right:10px;margin-left:10px"  class="animated zoomInUp">
+<ion-grid  class="animated zoomInUp">
+  <ion-row>
+    <ion-col size="4" style="border:0">
+      <ion-button color="green"  (click)="decrementQty(itemdetails)" expand="block" fill="solid" shape="round" 
+      style="width:50px;margin-left:50%">
+        <span style="font-size: 25px;font-weight: bold;color:white">-</span>
+      </ion-button>
+    </ion-col>
+    <ion-col size="4" style="border:0">
+      <ion-button class="buttonx" color="boxx" expand="block" fill="outline">
+        <span style="font-size: 25px;font-weight: bold;color:green;">{{qtyx}}</span>
+      </ion-button>
+    </ion-col>
+    <ion-col size="4" style="border:0">
+      <ion-button class="buttonx" color="green" (click)="incrementQty(itemdetails)" expand="block" fill="solid" 
+      shape="round" style="width:50px;margin-left:5%">
+        <span style="font-size: 25px;font-weight: bold;color:white">+</span>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<hr style="border-top:1px solid #0B610B;margin-right:10px;margin-left:10px"  class="animated zoomInUp">
+
+    <ion-item style="margin-top:5px" lines="none"  class="animated zoomInUp">
+      <ion-label style="margin-top:5px;">
+        <span class="cookie" style="font-size: 25px;">Description:</span>
+        <h1 style="color:#1f0b50;font-size: 20px;" class="customfont">{{itemdetails.description}}          
+        </h1>        
+      </ion-label>
+    </ion-item>
+</ion-content>
+
+<ion-footer  class="animated flipInX">
+ 
+  <ion-grid fixed>
+      <ion-row>
+        <ion-col class="ion-no-padding" style="display:flex;justify-content: center;align-items: center;
+            background-color: #0B610B;color:#0B610B;font-weight: bold;border-right:1px solid #428842;
+            height:45px;padding-top:5px;padding-bottom: 5px;"
+          size="4">
+          <span style="background:#e62e00;padding:5px 7px 4px 7px;color:white;font-weight: 400;
+          border-radius: 5px;">{{qtyx}}</span>
+        </ion-col>
+        <ion-col (click)="addToCart(itemdetails)" class="ion-no-padding buttonx" style="display:flex;justify-content: center;align-items: center;
+                  background-color: #0B610B;color:white;font-weight: bold;padding-top:5px;padding-bottom: 5px;
+                  " size="4">
+          Add To Cart
+        </ion-col>
+        <ion-col class="ion-no-padding" style="display:flex;justify-content: center;align-items: center;
+        background-color: #0B610B;color:white;font-weight: bold;padding-top:5px;padding-bottom: 5px;
+        " size="4">
+
+<!-- <span style="background:#e62e00;padding:5px 7px 4px 7px;color:white;font-weight: 400;
+          border-radius: 5px;">{{amtx | currency:'INR'}}</span> -->
+          <span style="background:#e62e00;padding:5px 7px 4px 7px;color:white;font-weight: 400;
+          border-radius: 5px;">{{dispTotalAmt  | currency:'INR'}}</span>
+</ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-footer>

@@ -1,0 +1,45 @@
+{
+    "categories": [
+        {
+            "title" : "Grocery",
+            "cover" : "https://upload.wikimedia.org/wikipedia/commons/1/13/Supermarkt.jpg",
+            "imgFlg":"true"            
+         },
+         {
+            "title" : "Spices",
+            "cover" : "https://www.bing.com/th?id=OIP.UMtYEyGFkHyYcC5v0oX4xQHaFj&w=135&h=101&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2",
+            "imgFlg":"true"
+         },
+         {
+            "title" : "Snacks",
+            "cover" : "https://www.bing.com/th?id=OIP.UFWO3s5F4VSkCmgUew7glwHaEK&w=186&h=105&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2",
+            "imgFlg":"true"
+         },
+         {
+            "title" : "Vegetables",
+            "cover" : "https://www.bing.com/th?id=OIP.CmVJSh80iCpbUxFjmUd1IwHaEK&w=200&h=108&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2",
+            "imgFlg":"true"
+         },
+         {
+            "title" : "Meat",
+            "cover" : "https://www.bing.com/th?id=OIP.XCERQaECDT5C8kX7dKbcMwHaEK&w=212&h=110&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2",
+            "imgFlg":"true"
+         },
+         {
+            "title" : "Fish",
+            "cover" : "https://www.bing.com/th?id=OIP.kftfjyK5SfpKWnxcZHA6YwHaED&w=183&h=102&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2",
+            "imgFlg":"true"
+         },
+         {
+            "title" : "Rice",
+            "cover" : "https://www.bing.com/th?id=OIP.dsJCKyurrPiU5l5yPgMH5QHaF7&w=128&h=102&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2",
+            "imgFlg":"true"
+         },
+         {
+            "title" : "Lentils",
+            "cover" : "https://www.bing.com/th?id=OIP.f1HoxfsY06SZxx7MtW56JgHaCi&w=273&h=103&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2",
+            "imgFlg":"true"
+         }
+    ]
+  }
+  

@@ -1,0 +1,183 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="homex"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Shell Resolver</ion-title>
+  </ion-toolbar>
+</ion-header>
+ -->
+ <ion-header>
+  <ion-toolbar color="navy">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end" (click)="gotoNotifications()">
+      <ion-icon style="font-size: 25px;padding-right:10px;" name="notifications"></ion-icon>
+    </ion-buttons>
+    <ion-title class="cookie text-exampleImgXXX" style="font-size: 25px;">Shell Resolver</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- <section class="demo-section">
+    <p>
+      By following the App Shell pattern we can achieve awesome UX.
+    </p>
+  </section> -->
+  <!-- <ion-row *ngFor="let item of routeResolveData?.items" style="background-color: #FFF; padding: 10px;">
+    <ion-col size="4">
+      <div class="image-shell">
+        <img [src]="item?.image" alt="Sample Image" style="width: 100%; height: 100%;"/>
+      </div>
+    </ion-col>
+    <ion-col size="8">
+      <h3 class="text-shell" style="margin-top: 0px; min-height: 22px;" [ngClass]="{'text-loaded': item?.title}">
+        {{ item?.title }}
+      </h3>
+      <p class="text-shell" style="min-height: 35px;" [ngClass]="{'text-loaded': item?.description}">
+        {{ item?.description }}
+      </p>
+    </ion-col>
+  </ion-row> -->
+
+<!--   <ion-row *ngFor="let item of routeResolveData?.results" style="background-color: #FFF; padding: 10px;">
+    <ion-col size="4">
+      <div class="image-shell">
+        <img [src]="item?.picture.large" alt="Sample Image" style="width: 100%; height: 100%;"/>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <h3 class="text-shell" style="margin-top: 0px; min-height: 22px;" [ngClass]="{'text-loaded': item?.name.first}">
+        {{ item?.name.first }}
+      </h3>
+      <p class="text-shell" style="min-height: 35px;" [ngClass]="{'text-loaded': item?.name.last}">
+        {{ item?.name.last }}
+      </p>
+    </ion-col>
+
+    <ion-col size="4">     
+      <p class="text-shell" style="min-height: 35px;" [ngClass]="{'text-loaded': item?.gender}">
+        {{ item?.gender }}
+      </p>
+    </ion-col>
+  </ion-row> -->
+
+  <ion-row>
+    <ion-col size="4" *ngFor="let item of routeResolveData?.results" style="background-color: #FFF; padding: 10px;">
+
+     <!--  <div class="image-shell">
+        <img [src]="item?.picture.large" alt="" style="width: 100%; height: 100%;"/>
+      </div> -->
+
+
+
+      <!-- <div class="image-shell">
+        <img [src]="item?.picture.large" alt="" style="width: 100%; height: 100%;"/>
+      </div> -->
+
+
+      <div class="image-shell">
+        <!-- <img [src]="item?.picture.large" alt="" style="width: 100%; height: 100%;"/> -->
+
+        <!-- <ion-img [src]="item?.picture.large" alt="" style="width: 100%; height: 100%;"></ion-img> -->
+
+       <!--  <ion-img *ngIf="item?.picture.large"
+        [src]="true ? item?.picture.large : ''" 
+        alt="" style="width: 100%; height: 100%;"></ion-img> -->
+
+
+
+
+        <!-- ================ WORKING PERFECT SQUARED IMAGE============================ -->
+       <!--  <ion-img *ngIf="item?.picture.large" class="xx"
+        [src]="item?.picture.large" 
+        alt="" style="width: 100%; height: 100%;"></ion-img> -->
+        <!-- ================ WORKING PERFECT SQUARED IMAGE============================ -->
+
+
+        <!-- ================ WORKING PERFECT CIRCLED IMAGE============================ -->
+        <ion-img *ngIf="item?.picture.large" class="xx ionimg-circle"
+        [src]="item?.picture.large" 
+        alt="" style="width: 100%; height: 100%;"></ion-img>
+        <!-- ================ WORKING PERFECT CIRCLED IMAGE============================ -->
+
+
+
+
+
+      <!--  <ion-img 
+       [src]="false ? item?.picture.large : '../../assets/imgs/logo.png'" 
+       alt="" style="width: 100%; height: 100%;"></ion-img> -->
+      </div> 
+
+     
+
+
+      <!-- <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;" 
+      [ngClass]="{'text-loaded': item?.gender}">
+        {{ item?.gender }} 
+      </h5> -->
+     <!--  <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;font-size: 10px;" 
+      [ngClass]="{'text-loaded': item?.email}">
+        {{ item?.email }} 
+      </h5> -->
+      <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;" 
+      [ngClass]="{'text-loaded': item?.gender}">
+        <!-- <span class="animated infinite flipInX">{{ item?.name.first }}</span> -->
+        <span class="xx">{{ item?.name.first }}</span>
+      </h5>
+      <h5 class="text-shell" style="margin-top: -5px; min-height: 22px;text-align: center;font-size: 12px;" [ngClass]="{'text-loaded': item?.name.last}">
+        <!-- {{ item?.name?.last }}  -->
+        <span class="xx">{{ item?.name.last }}</span>
+      </h5>
+
+
+
+      <!-- <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;" [ngClass]="{'text-loaded': item?.name.first}">
+        {{ item?.name?.first }} 
+      </h5>
+      <h5 class="text-shell" style="margin-top: -5px; min-height: 22px;text-align: center;font-size: 12px;" [ngClass]="{'text-loaded': item?.name.last}">
+        {{ item?.name?.last }} 
+      </h5> -->
+
+
+
+
+     <!--  <h5 class="text-shell" style="margin-top: 0px; min-height: 22px;" [ngClass]="{'text-loaded': item?.gender}">
+        {{ item?.gender }} 
+      </h5> -->
+      <!-- <p class="text-shell" style="min-height: 35px;" [ngClass]="{'text-loaded': item?.name.last}">
+        {{ item?.name.last }}
+      </p>
+      <p class="text-shell" style="min-height: 35px;" [ngClass]="{'text-loaded': item?.gender}">
+        {{ item?.gender }}
+      </p> -->
+
+     <!--  <div class="image-shell">
+        <img [src]="item?.picture.large" alt="Sample Image" style="width: 100%; height: 100%;"/>
+      </div>
+      <h3 class="text-shell" style="margin-top: 0px; min-height: 22px;" [ngClass]="{'text-loaded': item?.name.first}">
+        {{ item?.name.first }}
+      </h3>
+      <p class="text-shell" style="min-height: 35px;" [ngClass]="{'text-loaded': item?.name.last}">
+        {{ item?.name.last }}
+      </p>
+    </ion-col> -->
+   <!--  <ion-col size="4">
+      <h3 class="text-shell" style="margin-top: 0px; min-height: 22px;" [ngClass]="{'text-loaded': item?.name.first}">
+        {{ item?.name.first }}
+      </h3>
+      <p class="text-shell" style="min-height: 35px;" [ngClass]="{'text-loaded': item?.name.last}">
+        {{ item?.name.last }}
+      </p>
+    </ion-col>
+
+    <ion-col size="4">     
+      <p class="text-shell" style="min-height: 35px;" [ngClass]="{'text-loaded': item?.gender}">
+        {{ item?.gender }}
+      </p>
+      -->
+    </ion-col> 
+  </ion-row>
+</ion-content>

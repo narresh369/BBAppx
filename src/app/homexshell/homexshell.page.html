@@ -1,0 +1,830 @@
+<ion-header>
+  <ion-toolbar color="navy">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end" (click)="gotoNotifications()">
+      <ion-icon style="font-size: 25px;padding-right:10px;" name="notifications"></ion-icon>
+    </ion-buttons>
+    <!-- <ion-title class="cookie text-exampleImgXXX" style="font-size: 25px;">Homex Shell Resolver</ion-title> -->
+    <ion-title class="cookie text-exampleImgXXX" style="font-size: 25px;">Items</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content class="magictime puffIn"> -->
+  <ion-content class="animated slideInRight">
+  <!-- =============================================================================================== -->
+  <!-- <ion-content class="animated zoomIn"> -->
+    <!-- <ion-content> -->
+  <ion-grid class="ion-no-padding">
+    <ion-row class="ion-no-padding">
+      <ion-col class="ion-text-center ion-no-padding">
+        <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide  class="ion-no-padding" *ngFor="let item of iconLblsRand;">
+              <!-- <img style="background-size: 100vw 100vh;" src="../../assets/home/recipies/{{item.id}}.jpg"> -->
+              <img style="background-size: 100vw 100vh;" src="../../assets/home/testx/{{item.id}}.jpg">
+            </ion-slide>
+          </ion-slides>          
+        </ion-col>
+    </ion-row>
+    </ion-grid>
+
+    <!-- <hr style="border-top:1px solid #7373e6;margin-left:10px;margin-right:10px"/> -->
+
+    <!-- <div style="padding-left:10px;padding-top:10px">
+      <span style="font-size: 23px;color: red" class="cookie">Categories zzzz</span>
+      </div> -->
+<!-- 
+      <div *ngFor="let x of xxxxx">
+        {{x.title}}
+        </div> -->
+
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+       <!--  <ion-row style="padding:5px"> 1111     
+          <ion-col size="3" (click)="categoriesDetail(item)" class="buttonx"
+           *ngFor="let item of cats" style="background-color: #FFF; padding: 10px;">      
+         <ion-img *ngIf="item?.cover" class="xx ionimg-curved"
+                     [src]="item?.cover" 
+                     alt="" style="width: 100%; height: 80%;object-fit: cover;"></ion-img>               
+             <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;"
+               [ngClass]="{'text-loaded': item?.title}">
+               <span style="font-weight: bold" class="xx cookie">{{ item?.title }}</span>
+             </h5>           
+           </ion-col>
+         </ion-row> -->
+         <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    
+ <!--      <ion-row style="padding:5px">
+      
+       <ion-col size="3" (click)="categoriesDetail(item)" class="buttonx"
+        *ngFor="let item of cats" style="background-color: #FFF; padding: 10px;">
+    
+    
+      <ion-img *ngIf="item?.cover" class="xx ionimg-curved"
+                  [src]="item?.cover" 
+                  alt="" style="width: 100%; height: 100%;object-fit: cover;"></ion-img>
+            
+          <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;"
+            [ngClass]="{'text-loaded': item?.title}">
+            <span style="font-weight: bold" class="xx cookie">{{ item?.title }}</span>
+          </h5>
+        
+        </ion-col>
+      </ion-row> -->
+
+
+  <!-- 00000000000000000000000000000000000000000000000000000000000000000 -->
+
+  <div style="padding-left:10px;padding-top:10px">
+  <span style="font-size: 23px;color: red" class="cookie">Categories</span>
+  </div>
+
+  <ion-row style="padding:5px">
+   <!--  <ion-col size="3" (click)="categoriesDetail(item)" class="buttonx"
+    *ngFor="let item of routeResolveData3?.categories" style="background-color: #FFF; padding: 10px;">
+ -->
+
+ <ion-col size="3" (click)="categoriesDetail(item)" class="buttonx"
+ *ngFor="let item of routeResolveData3" style="background-color: #FFF; padding: 10px;">
+
+  
+    
+      <div class="image-shell-curved">       
+        <!-- ================ WORKING PERFECT SQUARED IMAGE============================ -->
+         <ion-img *ngIf="item?.cover" class="xx ionimg-curved"
+              [src]="item?.cover" 
+              alt="" style="width: 100%; height: 100%;object-fit: cover;"></ion-img>
+
+              <!-- <ion-img *ngIf="item?.cover" class="xx ionimg-circle"
+              [src]="item?.cover" 
+              alt="" style="width: 100%; height: 100%;object-fit: cover;"></ion-img> -->
+              
+        <!-- ================ WORKING PERFECT SQUARED IMAGE============================ -->
+        <!-- ================ WORKING PERFECT CIRCLED IMAGE============================ -->
+        <!-- <ion-img *ngIf="item?.cover" class="xx ionimg-circle" [src]="item?.cover" alt=""
+          style="width: 100%; height: 100%;object-fit: cover;"></ion-img> -->
+        <!-- ================ WORKING PERFECT CIRCLED IMAGE============================ -->
+
+
+        <!--  <ion-img 
+           [src]="false ? item?.picture.large : '../../assets/imgs/logo.png'" 
+           alt="" style="width: 100%; height: 100%;"></ion-img> -->
+      </div>
+      <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;"
+        [ngClass]="{'text-loaded': item?.title}">
+        <span style="font-weight: bold" class="xx cookie">{{ item?.title }}</span>
+      </h5>
+    
+    </ion-col>
+  </ion-row>
+  <!-- 00000000000000000000000000000000000000000000000000000000000000000 -->
+
+    <!-- aaaaaaaaaaaaaaaaaaaaaa  WITH STAGGERING aaaaaaaaaaaaaaaaaaaaaaaaaa -->
+   
+
+      <div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+        <span style="font-size: 23px;color: red;" class="cookie">Discounts for you</span>
+        </div>
+        <ion-grid>
+          <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+            <ion-col (click)="gotoConstruction(item)" class="buttonx" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+            class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}" 
+            *ngFor="let item of itemsDiscountsForYou;let i = index" size="4">
+            <div class="ion-text-left" style="margin-bottom: 15px;">
+            <ion-badge class="my-item1 rotated" 
+            style="font-size: 13px;margin-top:15px;font-weight: bold;color:white;" 
+            color="badgex"><span style="font-weight: bold;"          
+            >Off <span style="color:white;font-weight: bold;">{{item.label1}}</span></span></ion-badge>        
+            <ion-icon class="animated infinite pulse" name="star" style="font-size: 20px!important;" [ngStyle]="{'color':item.color}"></ion-icon>  
+            </div>           
+              <ion-img *ngIf="item?.vid" class="xx ionimg-curved"
+                  [src]="item?.vid" 
+                  alt="" style="width: 100%; height: 40%;object-fit: cover;"></ion-img>
+              <ion-label class="ion-text-center" style="margin-bottom:10px">
+                <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" class="cookie titlex">{{item.itemname}} | {{item.qty}}</h2>
+                <p class="customfont titlex2">Rs {{item.rate}}
+                  <span  style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>   
+                </p>         
+              </ion-label>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+<!-- aaaaaaaaaaaaaaaaaaaaaa  WITH STAGGERING aaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+
+ <!-- bbbbbbbbbbbbbbbb  WITH STAGGERING bbbbbbbbbbbbbbbbbbb -->
+
+
+
+ <br>
+ <div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+  <span style="font-size: 23px;color: red;" class="cookie">More Offers</span>
+  </div>
+  <ion-grid>
+    <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+      <ion-col (click)="gotoConstruction(item)" class="buttonx" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+      class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}" 
+      *ngFor="let item of itemsDiscountsForYou;let i = index" size="4">
+
+      <div class="ion-text-center" style="margin-bottom: 2px;">
+      <ion-badge
+      style="font-size: 13px;margin-top:2px;font-weight: bold;color:white;width:80%" 
+      color="badgexxx"><span style="font-weight: bold;"          
+      >Off <span style="color:white;font-weight: bold;">{{item.label1}}</span></span></ion-badge> 
+
+      <!-- <ion-icon class="animated infinite pulse" name="star" style="font-size: 20px!important;" [ngStyle]="{'color':item.color}"></ion-icon>   -->
+      </div>           
+        <ion-img *ngIf="item?.vid" class="xx ionimg-curved"
+            [src]="item?.vid" 
+            alt="" style="width: 100%; height: 40%;object-fit: cover;"></ion-img>
+        <ion-label class="ion-text-center" style="margin-bottom:10px">
+          <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" class="cookie titlex">{{item.itemname}} | {{item.qty}}</h2>
+          <p class="customfont titlex2">Rs {{item.rate}}
+            <span  style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>   
+          </p>         
+        </ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+ <!-- bbbbbbbbbbbbbbbb  WITH STAGGERING bbbbbbbbbbbbbbbbbbb -->
+
+ <br>
+
+ <div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+  <span style="font-size: 23px;color: red;" class="cookie">Best Offers</span>
+  </div>
+  <ion-grid>
+    <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+      <ion-col (click)="gotoConstruction(item)" class="buttonx" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+      class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}" 
+      *ngFor="let item of itemsBestOffers;let i = index" size="4">
+      <div class="ion-text-center" style="margin-bottom: 15px;">
+      <ion-badge class="customfont rotated" style="font-size: 13px;margin-top:10px;font-weight: bold;color:darkred" 
+      color="badgexx"><span style="font-weight: bold;">Off <span style="color:navy;font-weight: bold;">{{item.label1}}</span></span></ion-badge>        
+      <ion-icon class="animated infinite pulse" name="star" style="font-size: 20px!important;" 
+      [ngStyle]="{'color':item.color}"></ion-icon>  
+      </div>           
+        <ion-img *ngIf="item?.vid" class="xx ionimg-curved"
+            [src]="item?.vid" 
+            alt="" style="width: 100%; height: 40%;object-fit: cover;"></ion-img>
+        <ion-label class="ion-text-center" style="margin-bottom:10px">
+          <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" 
+          class="cookie titlex">{{item.itemname}} | {{item.qty}}</h2>
+          <p class="customfont titlex2">Rs {{item.rate}}
+            <span  style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>   
+          </p>         
+        </ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+<!-- bbbbbbbbbbbbbbbbbb  WITH STAGGERING bbbbbbbbbbbbbbbbbbbb -->
+
+
+<br>
+<div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+ <span style="font-size: 23px;color: red;" class="cookie">Dussera Offers</span>
+ </div>
+ <ion-grid>
+   <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+     <ion-col (click)="gotoConstruction(item)" class="buttonx" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+     class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}" 
+     *ngFor="let item of itemsDiscountsForYou;let i = index" size="4">
+
+      <div class="ion-text-center" style="margin-bottom: 2px">
+        <ion-badge slot="start" style="font-size: 13px;margin-top:2px;font-weight: bold;color:white;width:80%;"
+          color="badgexxxx">
+          <span style="font-weight: bold;">Off
+            <span style="color:white;font-weight: bold;">{{item.label1}}</span>
+          </span>
+        </ion-badge>
+      </div>
+
+      <ion-img *ngIf="item?.vid" class="xx ionimg-curved" [src]="item?.vid" alt=""
+        style="width: 100%; height: 40%;object-fit: cover;margin-top:30px">
+      </ion-img>
+
+      <ion-label class="ion-text-center">
+        <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" 
+        class="cookie titlex">{{item.itemname}} | {{item.qty}}
+        </h2>
+        <p class="customfont titlex2" style="margin-bottom:-20px">Rs {{item.rate}}
+          <span style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>
+        </p>
+      </ion-label>
+
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+
+ <br>
+<div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+ <span style="font-size: 23px;color: red;" class="cookie">More Catalouge</span>
+ </div>
+
+<!-- ================== WORKING PERFECT xxxxxxxxxxxxx========================= -->
+<ion-grid>
+  <ion-row justify-content-center align-items-center>
+    <ion-col (click)="gotoConstruction(item)" class="buttonx" size="3" *ngFor="let item of itemsBestOffers">
+      <div style="border:1px solid #1ec039;border-radius: 5px;margin:5px;padding:8px">
+        <div class="flex">
+         <!--  <ion-thumbnail style="width:50px;height:50px">
+            <ion-img [src]="item.vid"></ion-img>
+          </ion-thumbnail> -->
+          <ion-avatar style="width:50px;height:50px">
+            <ion-img [src]="item.vid"></ion-img>
+          </ion-avatar>          
+        </div>
+        <div class="cookie" style="margin-top:5px;font-size: 15px;">{{item.itemname}}</div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<!-- ================== WORKING PERFECT xxxxxxxxxxxxx========================= -->
+
+
+
+<br>
+<div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+ <span style="font-size: 23px;color: red;" class="cookie">Dussera Offers</span>
+ </div>
+ <ion-grid>
+   <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+     <ion-col (click)="gotoConstruction(item)" class="buttonx" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+     class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}" 
+     *ngFor="let item of itemsDiscountsForYou;let i = index" size="4">
+
+      <ion-label  style="margin-bottom: 2px;">
+        <ion-badge slot="end" 
+        style="font-size: 13px;
+        margin-top:2px;
+        font-weight: bold;
+        color:white;
+        width:40px;
+        height:40px;        
+        border-radius: 20px;"
+          color="badgexxxxx">
+            <div style="color:white;font-weight: bold;margin-top: 10px;">{{item.label1}}</div>
+        </ion-badge>
+      </ion-label>
+
+      <ion-img *ngIf="item?.vid" class="xx ionimg-curved" [src]="item?.vid" alt=""
+        style="width: 100%; height: 40%;object-fit: cover;margin-top:10px">
+      </ion-img>
+
+      <ion-label class="ion-text-center">
+        <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" 
+        class="cookie">{{item.itemname}} | {{item.qty}}
+        </h2>
+        <p class="customfont titlex5" style="margin-bottom:-20px">Rs {{item.rate}}
+          <span style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>
+        </p>
+      </ion-label>
+
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+
+ <br>
+
+<br>
+<div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+ <span style="font-size: 23px;color: red;" class="cookie">Dussera Offers</span>
+ </div>
+ <ion-grid>
+   <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+     <ion-col (click)="gotoConstruction(item)" class="buttonx" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+     class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}" 
+     *ngFor="let item of itemsDiscountsForYou;let i = index" size="4">
+
+      <div class="ion-text-center" style="margin-bottom: -20px;">
+        <ion-badge slot="start" style="font-size: 13px;margin-top:2px;font-weight: bold;color:white;width:80%;border-radius: 10px"
+          color="badgexxxxxx">
+          <span style="font-weight: bold;">Off
+            <span style="color:white;font-weight: bold;">{{item.label1}}</span>
+          </span>
+        </ion-badge>
+      </div>
+
+      <ion-img *ngIf="item?.vid" class="xx ionimg-curved" [src]="item?.vid" alt=""
+        style="width: 100%; height: 40%;object-fit: cover;margin-top:30px">
+      </ion-img>
+
+      <ion-label class="ion-text-center">
+        <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" 
+        class="cookie">{{item.itemname}} | {{item.qty}}
+        </h2>
+        <p class="customfont titlex5" style="margin-bottom:-20px">Rs {{item.rate}}
+          <span style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>
+        </p>
+      </ion-label>
+
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+
+ <br>
+<div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+ <span style="font-size: 23px;color: red;" class="cookie">List Offers</span>
+ </div>
+
+
+ <ion-list padding *ngFor="let item of itemsBestOffers" style="border-bottom:1px solid #8282df;padding:10px;margin:5px" >    
+
+  <ion-item lines="none">
+    <ion-avatar style="width:80px;height:80px">
+      <ion-img [src]="item.vid"></ion-img>
+    </ion-avatar>    
+    <ion-label style="margin-left: 10px;">
+      <div class="cookie" style="margin-top:5px;font-size: 20px;">{{item.itemname}} </div> 
+      <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.icon}}</p>
+      <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.number}}</p> 
+      <ion-badge slot="end" style="color:white;" color="badgexxxxx">
+        Off {{item.label1}}          
+      </ion-badge>         
+    </ion-label>         
+    <ion-button slot="end" class="buttonx" style="color:white;" fill="outline" color="danger">
+      ADD          
+    </ion-button>
+  </ion-item>
+</ion-list>
+
+<br>
+<div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+ <span style="font-size: 23px;color: red;" class="cookie">Splendor Offers</span>
+ </div>
+
+
+
+
+<ion-grid style="margin-top:10px">
+  <ion-row style="border-bottom:1px solid #8282df;padding:10px;margin:5px" class="animated flipInX _{{i}}"
+  *ngFor="let item of itemsBestOffers;let i = index">
+    <ion-col size="4">
+      <ion-row>
+        <ion-col>
+          <ion-badge style="color:white;margin-left:-80px" color="badgexxxx">
+            {{item.label1}}          
+          </ion-badge>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-avatar style="margin-left:10px;width:80px;height:80px;border:2px solid #c9c9f0">
+            <ion-img [src]="item.vid"></ion-img>
+          </ion-avatar>  
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-icon style="margin-top:-10px;margin-left:40px" color="{{item.color}}" name="aperture"></ion-icon>
+          <ion-label>
+          <p class="cookie" style="margin-top:5px;font-size: 20px;color:red;font-weight: 200;">Best Price</p>
+          <p class="cookie" style="margin-top:5px;font-size: 20px;color:navy;font-weight: 200;">Hurry Up</p> 
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+
+    <ion-col size="4">
+      <div>
+      <ion-label>
+        <div class="cookie" style="margin-top:5px;font-size: 25px;font-weight: bold;">{{item.itemname}} </div> 
+        <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.icon}}</p>
+        <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.number}}</p> 
+        <p class="cookie" style="margin-top:5px;font-size: 20px;">{{item.label}}</p> 
+        <ion-button class="buttonx" style="color:white;" fill="outline" color="danger">
+          ADD          
+        </ion-button>       
+        </ion-label>  
+        </div>    
+    </ion-col>
+
+    <ion-col  size="4">
+      <div>
+      <ion-label>
+        <div class="cookie" 
+        style="margin-top:5px;font-size: 20px;border:1px solid #ec6262;padding:5px;
+        background-image: linear-gradient(to left bottom, #d3fcd1a8, #c5b4eb);
+        box-shadow: 2px 2px 3px 3px #d9d9e6;
+        ">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>       
+        <ion-badge slot="end" style="color:white;margin-top:5px" color="badgexxxxx">
+          Off {{item.label1}}          
+        </ion-badge>      
+        </ion-label> 
+        </div>    
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+
+
+
+
+
+
+<!-- STOPPED HERE -->
+
+
+<!--  <ion-item class="my-item">
+  <ion-badge>150</ion-badge>    
+</ion-item> -->
+  <!-- <ion-badge  class="my-item">150</ion-badge>     
+  -->
+
+<!-- <div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+  <span style="font-size: 23px;color: red;" class="cookie">More Offers</span>
+</div>
+<ion-grid>
+  <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+    <ion-col (click)="gotoConstruction(item)" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;"
+      class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}"
+      *ngFor="let item of itemsBestOffers;let i = index" size="4">
+      <div style="margin-bottom: 15px;">
+        <ion-badge class="my-item"><span style="font-weight: bold;color:white;">Off
+            <span style="color:white;font-weight: bold;padding:5px">
+              {{item.label1}}</span></span></ion-badge>
+      </div>
+        <ion-img *ngIf="item?.vid" class="xx ionimg-curved" [src]="item?.vid" alt=""
+        style="width: 100%; height: 40%;object-fit: cover;"></ion-img>
+      <ion-label class="ion-text-center" style="margin-bottom:10px">
+        <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" class="cookie titlex">{{item.itemname}} |
+          {{item.qty}}</h2>
+        <p class="customfont titlex2">Rs {{item.rate}}
+          <span style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>
+        </p>
+      </ion-label>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+<!-- bbbbbbbbbbbbbbbbbb  WITH STAGGERING bbbbbbbbbbbbbbbbbbbb -->
+
+<!--  <br>
+ <ion-grid>
+  <ion-row class="ion-align-items-center">
+    <ion-col (click)="gotoConstruction(item)" size="3" *ngFor="let article of itemsDiscountsForYou; let i=index;"
+      style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;">
+      <ion-list class="ion-text-center">
+        <div class="ion-text-center">
+          <ion-badge style="background: #0b3507;color:white;width:100%">Off {{article.label1}}</ion-badge>
+          <ion-avatar class="ion-text-center">
+            <img src="{{article.vid}}" style="height:70px" alt="{{article.title}}" />
+          </ion-avatar>
+        </div>
+        <div class="ion-text-center">
+          <ion-label style="margin-bottom:10px">
+            <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" class="cookie titlex">{{article.itemname}} |
+              {{article.qty}}</h2>
+            <p class="customfont titlex2">Rs {{article.rate}}
+              <span style="margin-bottom:10px;" class="customfont titlex3">{{article.oldrate}}</span>
+            </p>
+          </ion-label>
+        </div>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+
+<!-- <ion-grid>
+  <ion-row>
+    <ion-col size-lg="3" size-md="4" size-sm="6" size="12" *ngFor="let article of articles; let i=index;">
+      <ion-card>
+        <img src="{{article.image}}" alt="{{article.title}}"/>
+        <ion-card-header>
+          <ion-card-subtitle>{{article.title}}</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+
+<!-- <ion-grid>
+  <ion-row>
+      <ion-col size="3" *ngFor="let article of articles; let i=index;">
+        <img src="{{article.image}}" alt="{{article.title}}"/>
+          <ion-badge>{{article.lbl}}</ion-badge>      
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+
+<!-- <ion-grid>
+  <ion-row>
+      <ion-col size="3" *ngFor="let article of articles; let i=index;"  
+      style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;">     
+        <ion-list class="ion-text-center">
+          <ion-badge color="badgexxx" style="color:white;width:100%">Off {{article.lbl}}</ion-badge>  
+          <ion-item lines="none" class="ion-no-padding ion-text-center">
+            <ion-avatar>
+          <img src="{{article.image}}" alt="{{article.title}}"/>            
+          </ion-avatar> 
+          </ion-item>
+          <ion-label class="ion-text-center" style="margin-bottom:10px">
+            <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" class="cookie titlex">{{article.itemname}} |
+              {{article.qty}}</h2>
+            <p class="customfont titlex2">Rs {{article.rate}}
+              <span style="margin-bottom:10px;" class="customfont titlex3">{{article.oldrate}}</span>
+            </p>
+          </ion-label> 
+          </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+
+<!-- 
+<ion-grid>
+  <ion-row class="ion-align-items-center">
+    <ion-col size="3" *ngFor="let article of articles; let i=index;"
+      style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;">
+      <ion-list class="ion-text-center">
+        <div class="ion-text-center">
+          <ion-badge style="background: #0b3507;color:white;width:100%">Off {{article.lbl}}</ion-badge>
+          <ion-avatar class="ion-text-center">
+            <img src="{{article.image}}" style="height:70px" alt="{{article.title}}" />
+          </ion-avatar>
+        </div>
+        <div class="ion-text-center">
+          <ion-label style="margin-bottom:10px">
+            <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" class="cookie titlex">{{article.itemname}} |
+              {{article.qty}}</h2>
+            <p class="customfont titlex2">Rs {{article.rate}}
+              <span style="margin-bottom:10px;" class="customfont titlex3">{{article.oldrate}}</span>
+            </p>
+          </ion-label>
+        </div>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+     
+
+
+
+
+   <!-- 00000000000000000000000000000000000000000000000000000000000000000 -->
+
+  <!-- <div style="padding-left:10px;padding-top:10px">
+    <span style="font-size: 23px;color: red" class="cookie">Categories</span>
+  </div> -->
+
+<!--   <ion-row>
+    <ion-col class="padd" size="3" (click)="categoriesDetail(item)" 
+    *ngFor="let item of routeResolveData3?.categories"
+      style="background-color: #FFF; padding: 10px;">
+      <div class="image-shell-curved">
+        <ion-img *ngIf="item?.cover" class="xx ionimg-curved" [src]="item?.cover" alt=""
+          style="width: 100%; height: 100%;object-fit: cover;"></ion-img>
+      </div>
+      <h5 class="text-shell" style="text-align: center;"
+        [ngClass]="{'text-loaded': item?.title}">
+        <span style="font-weight: bold" class="cookie">{{ item?.title }}</span>
+      </h5>
+    </ion-col>
+  </ion-row> -->
+
+
+  <!-- <ion-grid class="ion-padding-none">
+    <ion-row>
+      <ion-col style="border:1px solid navy;border-radius: 10px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+      class="flex" *ngFor="let item of routeResolveData3?.categories" size="3">
+        <ion-list>
+          <ion-avatar text-center>            
+            <img [src]="item.cover" style="display: inline;"/>          
+        </ion-avatar>  
+        <div class="flex cookie" style="margin-top:10px">{{item.title}}</div> 
+        </ion-list>
+      </ion-col>     
+    </ion-row>
+  </ion-grid> -->
+    <!-- 00000000000000000000000000000000000000000000000000000000000000000 -->
+
+  <!-- <hr style="border-top:1px solid #7373e6;margin-left:10px;margin-right:10px;margin-top:-5px;"/> -->
+
+
+  <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+
+ <!--  <div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+    <span style="font-size: 23px;color: red;" class="cookie">Discounts for you</span>
+    </div>
+    <ion-grid>
+      <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+        <ion-col style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+        class="ion-text-center ion-justify-content-center borderx" 
+        *ngFor="let item of itemsDiscountsForYou" size="4">
+        <div class="ion-text-left" style="margin-bottom: 15px;">
+        <ion-badge class="customfont rotated" style="font-size: 13px;margin-top:10px;font-weight: bold;color:red" 
+        color="badgex"><span style="font-weight: bold;" class="animated infinite flipInX">Off <span style="color:navy;font-weight: bold;">{{item.label1}}</span></span></ion-badge>        
+        <ion-icon class="animated infinite pulse" name="star" style="font-size: 20px!important;" [ngStyle]="{'color':item.color}"></ion-icon>  
+        </div>           
+          <ion-img *ngIf="item?.vid" class="xx ionimg-curved"
+              [src]="item?.vid" 
+              alt="" style="width: 100%; height: 40%;object-fit: cover;"></ion-img>
+          <ion-label class="ion-text-center" style="margin-bottom:10px">
+            <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" class="cookie titlex">{{item.itemname}} | {{item.qty}}</h2>
+            <p class="customfont titlex2">Rs {{item.rate}}
+              <span  style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>   
+            </p>         
+          </ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid> -->
+    <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+     <!-- class="animated infinite flipInX" -->
+
+   <!--  <div style="padding-left:10px;padding-top:10px;margin-bottom:20px">
+      <span style="font-size: 23px;color: red;" class="cookie">Discounts for you</span>
+      </div>
+      <ion-grid>
+        <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+          <ion-col (click)="gotoConstruction(item)" style="padding:8px;box-shadow: 2px 2px 3px 3px #d9d9e6;" 
+          class="ion-text-center ion-justify-content-center borderx animated flipInX _{{i}}" 
+          *ngFor="let item of itemsDiscountsForYou;let i = index" size="4">
+          <div class="ion-text-left" style="margin-bottom: 15px;">
+          <ion-badge class="customfont rotated" 
+          style="font-size: 13px;margin-top:10px;font-weight: bold;color:white" 
+          color="badgex"><span style="font-weight: bold;"          
+          >Off <span style="color:white;font-weight: bold;">{{item.label1}}</span></span></ion-badge>        
+          <ion-icon class="animated infinite pulse" name="star" style="font-size: 20px!important;" [ngStyle]="{'color':item.color}"></ion-icon>  
+          </div>           
+            <ion-img *ngIf="item?.vid" class="xx ionimg-curved"
+                [src]="item?.vid" 
+                alt="" style="width: 100%; height: 40%;object-fit: cover;"></ion-img>
+            <ion-label class="ion-text-center" style="margin-bottom:10px">
+              <h2 style="margin-top:10px;font-weight: bold;font-size: 20px;" class="cookie titlex">{{item.itemname}} | {{item.qty}}</h2>
+              <p class="customfont titlex2">Rs {{item.rate}}
+                <span  style="margin-bottom:10px;" class="customfont titlex3">{{item.oldrate}}</span>   
+              </p>         
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <hr [hidden]="true" style="border-top:1px solid #7373e6;margin-left:10px;margin-right:10px"/>
+
+<!--   <ion-grid>
+    <ion-row style="padding-left:2px;padding-right:2px" class="borderx">
+      <ion-col (click)="categoriesDetail(item)" style="padding:8px;box-shadow: 2px 2px 3px 3px #f8eaea;"
+        class="ion-text-center ion-justify-content-center borderx" *ngFor="let item of itemsCategories" size="3">
+        <ion-list>
+          <ion-avatar text-center>  
+            <ion-spinner style="margin-top:20px;color:red;font-weight: bold;" name="lines"
+              [hidden]='item.imgFlg === "false"' color="primary"></ion-spinner>
+            <ion-img [src]="item?.cover" (ionImgDidLoad)="loadImage(item)" (ionError)="errorLoad(item)"></ion-img>
+          </ion-avatar>
+          <div class="flex cookie titlex" style="margin-top:10px">
+            {{item.title}}
+          </div>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+
+  
+<!-- 111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+<ion-row [hidden]="true" style="padding:5px">
+  <ion-col size="3" *ngFor="let item of routeResolveData1?.results" style="background-color: #FFF; padding: 10px;">
+    <div class="image-shell-circle">
+      <!-- <img [src]="item?.picture.large" alt="" style="width: 100%; height: 100%;"/> -->
+      <!-- <ion-img [src]="item?.picture.large" alt="" style="width: 100%; height: 100%;"></ion-img> -->
+      <!--  <ion-img *ngIf="item?.picture.large"
+            [src]="true ? item?.picture.large : ''" 
+            alt="" style="width: 100%; height: 100%;"></ion-img> -->
+      <!-- ================ WORKING PERFECT SQUARED IMAGE============================ -->
+      <!--  <ion-img *ngIf="item?.picture.large" class="xx"
+            [src]="item?.picture.large" 
+            alt="" style="width: 100%; height: 100%;"></ion-img> -->
+      <!-- ================ WORKING PERFECT SQUARED IMAGE============================ -->
+      <!-- ================ WORKING PERFECT CIRCLED IMAGE============================ -->
+      <ion-img *ngIf="item?.picture.large" class="xx ionimg-circle" [src]="item?.picture.large" alt=""
+        style="width: 100%; height: 100%;"></ion-img>
+      <!-- ================ WORKING PERFECT CIRCLED IMAGE============================ -->
+      <!--  <ion-img 
+         [src]="false ? item?.picture.large : '../../assets/imgs/logo.png'" 
+         alt="" style="width: 100%; height: 100%;"></ion-img> -->
+    </div>
+    <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;"
+      [ngClass]="{'text-loaded': item?.gender}">
+      <!-- <span class="animated infinite flipInX">{{ item?.name.first }}</span> -->
+      <span class="xx cookie">{{ item?.name.first }}</span>
+    </h5>
+   <!--  <h5 class="text-shell" style="margin-top: -5px; min-height: 22px;text-align: center;font-size: 12px;"
+      [ngClass]="{'text-loaded': item?.name.last}">
+      <span class="xx">{{ item?.name.last }}</span>
+    </h5> -->
+  </ion-col>
+</ion-row>
+<!-- 111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+<hr [hidden]="true" style="border-top:1px solid #7373e6;margin-left:10px;margin-right:10px"/>
+  <!-- 2222222222222222222222222222222222222222222222222222222222222222222222222222222222 -->
+
+  <ion-row [hidden]="true" *ngFor="let item of routeResolveData2?.items" style="background-color: #FFF; padding: 5px;">
+    <ion-col size="4">
+      <div class="image-shell">
+        <img [src]="item?.image" alt="Sample Image" class="xx ionimg-circle"/>
+      </div>
+    </ion-col>
+    <ion-col size="4">
+      <h3 class="text-shell" style="min-height: 22px;margin-bottom:-30px" [ngClass]="{'text-loaded': item?.title}">
+        <span class="xx cookie">{{ item?.title }}</span>
+      </h3>
+      <p class="text-shell" style="min-height: 35px;margin-top:30px" [ngClass]="{'text-loaded': item?.description}">
+        <span class="xx cookie">{{ item?.description }}</span>
+      </p>
+    </ion-col>
+    <ion-col size="4">
+      <h3 class="text-shell" style="min-height: 22px;margin-bottom:-30px" [ngClass]="{'text-loaded': item?.title}">
+        <span class="xx cookie">{{ item?.title }}</span>
+      </h3>
+      <p class="text-shell" style="min-height: 35px;margin-top:30px" [ngClass]="{'text-loaded': item?.description}">
+        <span class="xx cookie">{{ item?.description }}</span>
+      </p>
+    </ion-col>
+  </ion-row>
+<!-- 2222222222222222222222222222222222222222222222222222222222222222222222222222222222 -->
+
+
+ 
+ <!-- ============== STAGGERING CSS ==========================      -->
+      <!--   <div class="animated flipInX _{{i}}"
+        *ngFor="let item of routeResolveData3?.categories;let i = index" style="background-color: #FFF; padding: 10px;">       
+          <span style="font-weight: bold" class="xx cookie">{{i}}{{ item?.title }}</span>
+        </div>  -->     
+<!-- ============== STAGGERING CSS ==========================      -->     
+
+<!-- ============== STAGGERING CSS ==========================      -->     
+<!-- <ion-row style="padding:5px">
+  <ion-col size="3" class="animated slideInLeft _{{i}}" (click)="categoriesDetail(item)"
+  *ngFor="let item of routeResolveData3?.categories;let i = index" style="background-color: #FFF; padding: 10px;">
+    <div class="image-shell-curved">       
+       <ion-img *ngIf="item?.cover" class="xx ionimg-curved"
+            [src]="item?.cover" 
+            alt="" style="width: 100%; height: 100%;object-fit: cover;"></ion-img>      
+    </div>
+    <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;"
+      [ngClass]="{'text-loaded': item?.title}">
+      <span style="font-weight: bold" class="xx cookie">{{ item?.title }}</span>
+    </h5>  
+  </ion-col>
+</ion-row> -->
+<!-- ============== STAGGERING CSS ==========================      -->     
+
+
+</ion-content>

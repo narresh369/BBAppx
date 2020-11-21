@@ -1,0 +1,74 @@
+ /* ==================== FONTS =================================== */
+
+.ralewaydotsregular{
+    font-family:"RalewayDots-Regular";
+  }
+  
+  .cookie{
+    font-family:"Cookie Regular";
+  }
+  
+  .customfont{
+    font-family:"customfont";
+  }
+  
+  .delvonthin{
+    font-family:"Delvon Thin";
+  }
+  
+  .SHAIMAADEMORegular{
+    font-family:"SHAIMAADEMORegular";
+  }
+  /* ==================== FONTS =================================== */
+  .text-exampleImgXXX { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+    height:100%;
+    text-align: center; 
+    position: relative;
+    display: inline-block; 
+    padding:0px;
+    margin:0px;
+  }
+  
+//===============************* SHELL RELATED *******========================
+  .xx{
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    /* animation-iteration-count: infinite; */
+    animation-duration: 2s;
+    /* animation-direction: alternate; */
+}
+@keyframes cf3FadeInOut {
+    0% {
+    opacity:0.1;
+  }
+  45% {
+  opacity:0.25;
+  }
+  55% {
+  opacity:0.5;
+  }
+  100% {
+  opacity:1;
+  }
+  }
+  //=================== CIRCLE ION-IMAGE ==============================
+  .ionimg-circle{
+   /*  border-radius: 10px !important;
+    overflow: hidden; */
+    border-radius: 50% !important;
+    overflow: hidden;
+  }
+  //ALSO IN THE FILE src\app\progressive-shell-resolver\shell-elements.scss....UNCOMMENT THE FOLLOWING
+   /* =========== FOR CIRCLED SHELL UNCOMMENT THIS =========== */
+  /* border-radius: 50% !important;
+  overflow: hidden; */
+  /* =========== FOR CIRCLED SHELL UNCOMMENT THIS =========== */
+  //=================== CIRCLE ION-IMAGE ==============================
+
+  //===============************* SHELL RELATED *******========================
+  

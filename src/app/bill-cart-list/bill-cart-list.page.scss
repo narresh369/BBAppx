@@ -1,0 +1,336 @@
+/* ==================== FONTS =================================== */
+
+.ralewaydotsregular{
+    font-family:"RalewayDots-Regular";
+  }
+  
+  .cookie{
+    font-family:"Cookie Regular";
+  }
+  
+  .customfont{
+    font-family:"customfont";
+  }
+  
+  .delvonthin{
+    font-family:"Delvon Thin";
+  }
+  
+  .SHAIMAADEMORegular{
+    font-family:"SHAIMAADEMORegular";
+  }
+  /* ==================== FONTS =================================== */
+  
+  
+  
+  .iconnameyy{
+      font-size: 20px;
+      font-family: "Cookie Regular";
+      color:white;
+      margin-top: -2px;;
+    }
+  
+    /* .yy{
+      border:1px solid #9d9deb;box-shadow: 3px 3px #888888;
+      width: 300px;
+      height:350px;
+      background-color: navy;
+    } */
+  
+    .iconnamexx{
+      font-size: 20px;
+      font-family: "Cookie Regular";
+      color:white;
+      margin-top: -2px;;
+    }
+  
+    ion-grid{
+      --ion-grid-padding:0;
+      --ion-grid-column-padding:0;  
+    }
+  
+    .grid-of-icons{
+      --ion-grid-column-padding:32px;    
+    }
+  /*   ion-col{
+      border:1px solid #9191e7;
+    } */
+  
+  
+  
+    .pp{
+      --ion-grid-padding:0px;
+      --ion-grid-column-padding	:0px;
+      background:yellow;
+    }
+  
+    /* ================================================== */
+  /*   .box{
+      position: relative;
+      display: inline-block; 
+  }
+  .box .text{
+      position: absolute;
+      z-index: 999;  
+      left: 0;
+      right: 10;
+      text-align: center;
+      top: 73%;
+      background: #d4eebbcc;
+      font-family: Arial,sans-serif;     
+      color:navy;
+      width: 100%; 
+      height:35px;
+  }
+   */
+/*   .xx{
+    border:solid 1px navy;
+    box-shadow: 2px 2px 3px 3px #888888;
+    background-color: #c7c7e9;    
+  } */
+
+ /*  .xxx{
+    border:solid 1px navy;
+    box-shadow: 2px 2px 3px 3px #888888;
+    background-color: #c7c7e9;
+    height:30px;
+    text-align: center;
+    color:navy;    
+  } */
+  
+  .center {
+    margin: auto;
+    width: 100%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+  
+  .section {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px dashed #1c87c9;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  /* ===================== TEXT ON IMAGE ============================= */
+  .container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .container img {vertical-align: middle;}
+  
+  .container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    /* color: #f1f1f1; */
+    color: #0ef3d5;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+  /* ===================== TEXT ON IMAGE ============================= */
+  .containerx{
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin:0 auto;
+  }
+  
+  //<!-- ========================= WORKING GOOD THIS =================================== -->
+  .text-example { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+    text-align: center; 
+   /*  margin: 10% 0;  */
+    min-height: 200px; 
+    /* background-color: rgba(33, 33, 33, .3);  */
+    align-items: center; 
+    
+  }
+  .text-exampleImg { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+    height:100%;
+    text-align: center; 
+   /*  margin: 10% 0;  */
+    /* min-height: 100px;  */
+    /* background-color: rgba(33, 33, 33, .3);  */
+    position: relative;
+    display: inline-block; 
+    padding:0px;
+    margin:0px;
+  }
+  //<!-- ========================= WORKING GOOD THIS =================================== -->
+  
+  //<!-- ========================= WORKING GOOD THIS XXX  =================================== -->
+  .text-exampleXXX { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+    text-align: center; 
+    min-height: 200px; 
+    align-items: center;     
+  }
+  .text-exampleImgXXX { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+    height:100%;
+    text-align: center; 
+    position: relative;
+    display: inline-block; 
+    padding:0px;
+    margin:0px;
+  }
+  //<!-- ========================= WORKING GOOD THIS XXX  =================================== -->
+  
+  
+  /* ============================== GRID LIST WITH AVATAR ================================= */
+  .bottom_avtar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    }
+    .titlex{
+      color:#040438;
+      font-size: 25px;
+      font-weight: bold;
+      margin-top:10px;
+    }
+    .titlex1{
+      color:#6d9412;
+      font-size: 15px;
+    }
+    .titlex2{
+      color:#0f0e0f;
+      margin-top:5px;
+      font-size: 15px;
+    }
+    .titlex3{
+      color:#eb561b;
+      margin-top:5px;
+      font-size: 13px;
+      text-decoration: line-through;
+  
+    }
+    .borderx{
+      border:1px solid #d8d8f0;      
+    }
+    .bottom_avtarx {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #cbecd8;
+      }
+    /* ============================== GRID LIST WITH AVATAR ================================= */
+  
+  
+
+    .slides-starting { 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; 
+      width: 100%; 
+      height:25%;
+      text-align: center; 
+      position: relative;
+      display: inline-block; 
+      padding:0px;
+      margin:0px;
+    }
+  
+    /* box-shadow: 2px 2px 3px 3px #888888; */
+
+    .ion-color-badgex {
+      --ion-color-base: #7cf07c;
+      --ion-color-base-rgb: 200,223,32;
+      --ion-color-contrast: #000000;
+      --ion-color-contrast-rgb: 0,0,0;
+      --ion-color-shade: #b0c41c;
+      --ion-color-tint: #cee236;
+    }
+
+    .ion-color-badgebestpricex {
+      --ion-color-base: #13c413;
+      --ion-color-base-rgb: 200,223,32;
+      --ion-color-contrast: #000000;
+      --ion-color-contrast-rgb: 0,0,0;
+      --ion-color-shade: #b0c41c;
+      --ion-color-tint: #cee236;
+    }
+
+    .ion-color-badgey {
+      --ion-color-base: #fa780e;
+      --ion-color-base-rgb: 200,223,32;
+      --ion-color-contrast: #000000;
+      --ion-color-contrast-rgb: 0,0,0;
+      --ion-color-shade: #b0c41c;
+      --ion-color-tint: #cee236;
+    }
+    //======================================================
+    .rotated {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      /* background-color: #3e6ac2; */
+    }
+   //=======================================================
+   /* ion-button {
+    ion-badge {
+      position: absolute;
+      opacity: 0.9;
+          top: -0.1rem;
+          right: 0.2rem;
+      & ~ ion-icon {
+        margin-right: 1.2rem;
+      }
+    }
+  } */
+
+  .titlexx{
+    color:#040438;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:10px;
+  }
+  .titlexx1{
+    color:#6d9412;
+    font-size: 10px;
+  }
+  .titlexx2{
+    color:#0f0e0f;
+    margin-top:5px;
+    font-size: 10px;
+  }
+
+  .centervhx{
+    
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }

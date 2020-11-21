@@ -1,0 +1,1492 @@
+ionic start
+
+BBApx
+
+ionic serve
+================================================================================================================
+WORKING:
+=======
+https://github.com/zyra/ionic-image-loader/issues/209
+
+I can confirm @abePdIta solution works tho, I installed both packages and edited my app.module.ts as such:
+
+import { WebView } from '@ionic-native/ionic-webview/ngx'; import { IonicImageLoader } from 'ionic-image-loader';
+
+IonicImageLoader.forRoot() in the imports array, WebView in the providers array then also add IonicImageLoader in your page's module imports array.
+================================================================================================================
+***************************************************************************************
+***************************************************************************************
+PLUGINS USED:
+============
+https://ionicframework.com/docs/native/ionic-webview
+
+Ionic-Image-Loader:
+==================
+npm i -s ionic-image-loader@7.0.0-beta.2
+
+INSTALL NATIVE WEBVIEW:
+======================
+https://ionicframework.com/docs/native/ionic-webview
+
+ionic cordova plugin add cordova-plugin-ionic-webview
+npm install @ionic-native/ionic-webview
+
+File:
+====
+ionic cordova plugin add cordova-plugin-file
+npm install @ionic-native/file
+
+File Transfer:
+=============
+ionic cordova plugin add cordova-plugin-file-transfer
+npm install @ionic-native/file-transfer
+
+***************************************************************************************
+***************************************************************************************
+
+=====================================================================================================================
+ionic cordova platform add android
+======================================================================================================================
+ionic cordova build android
+======================================================================================================================
+ionic generate page homex
+ionic generate page ordersx
+ionic generate page aboutx
+ionic generate page loginx
+
+======================================================================================================================
+SWEETALERT:
+==========
+npm install --save sweetalert2
+
+CHANGED IN PACKAGE.JSON FILE and ran npm i
+"sweetalert2": "^8.9.0",
+"sweetalert2": "7.6.3",
+"sweetalert2": "7.6.3",
+"sweetalert2": "7.6.3",
+
+"sweetalert2": "^10.0.2",
+"sweetalert2": "^10.3.5",
+"sweetalert2": "7.6.3",
+======================================================================================================================
+TOAST:
+-----
+https://ionicframework.com/docs/native/toast
+
+ionic cordova plugin add cordova-plugin-x-toast
+npm install @ionic-native/toast
+
+==============================================
+===================================================================================================================
+NETWORK:
+=======
+https://ionicframework.com/docs/native/network
+
+
+ionic cordova plugin add cordova-plugin-network-information
+npm install @ionic-native/network
+======================================================================================================================
+ionic generate page addItemToCart
+ionic generate service cartItemsToDB
+ionic generate page billCartList
+ionic generate page order-detail
+ionic generate page categoriesDetail
+======================================================================================================================
+PDF Generator:************* (CHECK IF REQUIRED) ******************
+=============
+https://ionicframework.com/docs/native/pdf-generator
+https://www.npmjs.com/package/cordova-pdf-generator
+===================================================================================================================
+ionic cordova plugin add cordova-pdf-generator
+npm install @ionic-native/pdf-generator
+cordova plugins add node_modules/cordova-pdf-generator
+======================================================================================================================
+npm install jspdf --save************* (CHECK IF REQUIRED) ******************
+======================================================================================================================
+Base64:************* (CHECK IF REQUIRED) ******************
+======
+ionic cordova plugin add com-badrit-base64
+npm install @ionic-native/base64
+======================================================================================================================
+File Opener:
+===========
+https://ionicframework.com/docs/native/file-opener
+
+ionic cordova plugin add cordova-plugin-file-opener2
+npm install @ionic-native/file-opener
+======================================================================================================================
+===================================================================================================================
+FIREBASE:
+--------
+firebase.google.com
+neetaa.gudiemtla@gmail.com
+Narresh12578
+
+
+================================================================================================
+FIREBASE CRUD EXAMPLE:
+--------------------
+https://www.positronx.io/build-ionic-firebase-crud-app-with-angular/
+https://www.positronx.io/build-ionic-firebase-crud-app-with-angular/
+https://www.positronx.io/build-ionic-firebase-crud-app-with-angular/
+
+https://www.positronx.io/set-up-firebase-database-in-ionic-angular/
+https://www.positronx.io/set-up-firebase-database-in-ionic-angular/
+https://www.positronx.io/set-up-firebase-database-in-ionic-angular/
+
+https://github.com/SinghDigamber/ionic-firebase-crud
+https://github.com/SinghDigamber/ionic-firebase-crud
+https://github.com/SinghDigamber/ionic-firebase-crud
+
+
+npm install firebase @angular/fire --save
+------------------------------------------------------------------------------------------------
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+===================================================================================================================
+Firebase CRUD:
+=============
+ng generate page make-appointment
+ng generate page edit-appointment
+ng generate service shared/appointment
+
+===================================================================================================================
+
+E:\BBApp>ng generate service shared/appointment
+CREATE src/app/shared/appointment.service.spec.ts (382 bytes)
+CREATE src/app/shared/appointment.service.ts (140 bytes)
+
+E:\BBApp>
+===================================================================================================================
+
+===================================================================================================================
+ng generate service shared/ordersx
+------------------------------------
+
+E:\BBApp>ng generate service shared/ordersx
+CREATE src/app/shared/ordersx.service.spec.ts (362 bytes)
+CREATE src/app/shared/ordersx.service.ts (136 bytes)
+
+E:\BBApp>
+======================================================================================================================
+ionic generate page notifications
+
+======================================================================================================================
+
+======================================================================================================================
+
+E:\BBAppx>ionic generate component preloaderx
+> ng.cmd generate component preloaderx --project=app
+CREATE src/app/preloaderx/preloaderx.component.html (29 bytes)
+CREATE src/app/preloaderx/preloaderx.component.spec.ts (710 bytes)
+CREATE src/app/preloaderx/preloaderx.component.ts (284 bytes)
+CREATE src/app/preloaderx/preloaderx.component.scss (0 bytes)
+[OK] Generated component!
+
+E:\BBAppx>
+
+======================================================================================================================
+https://stackoverflow.com/questions/38846271/ionic-2-ionic-3-ionic-4-lazy-loading-spinner-for-pictures/38846370
+https://stackoverflow.com/questions/38846271/ionic-2-ionic-3-ionic-4-lazy-loading-spinner-for-pictures/38846370
+https://stackoverflow.com/questions/38846271/ionic-2-ionic-3-ionic-4-lazy-loading-spinner-for-pictures/38846370
+======================================================================================================================
+https://stackoverflow.com/questions/38846271/ionic-2-ionic-3-ionic-4-lazy-loading-spinner-for-pictures/38846370
+https://stackoverflow.com/questions/38846271/ionic-2-ionic-3-ionic-4-lazy-loading-spinner-for-pictures/38846370
+https://stackoverflow.com/questions/38846271/ionic-2-ionic-3-ionic-4-lazy-loading-spinner-for-pictures/38846370
+======================================================================================================================
+
+======================================================================================================================
+SHELL UX:
+=========
+
+E:\BBAppx>ionic generate page homexshell
+> ng.cmd generate page homexshell --project=app
+CREATE src/app/homexshell/homexshell-routing.module.ts (363 bytes)
+CREATE src/app/homexshell/homexshell.module.ts (500 bytes)
+CREATE src/app/homexshell/homexshell.page.html (129 bytes)
+CREATE src/app/homexshell/homexshell.page.spec.ts (675 bytes)
+CREATE src/app/homexshell/homexshell.page.ts (272 bytes)
+CREATE src/app/homexshell/homexshell.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (2562 bytes)
+[OK] Generated page!
+
+E:\BBAppx>
+======================================================================================================================
+
+sample-shell.model.ts (MAKE A JSON MODEL OF THE DATA COMING FROM HTTP CALLS)
+shell.provider.ts
+shell-elements.scss
+progressive-shell-resolver.ts (GET REMOTE DATA FROM HTTP CALLS)
+
+//===============************* SHELL RELATED *******========================
+  .xx{
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    /* animation-iteration-count: infinite; */
+    animation-duration: 2s;
+    /* animation-direction: alternate; */
+}
+@keyframes cf3FadeInOut {
+    0% {
+    opacity:0.1;
+  }
+  45% {
+  opacity:0.25;
+  }
+  55% {
+  opacity:0.5;
+  }
+  100% {
+  opacity:1;
+  }
+  }
+  //=================== CIRCLE ION-IMAGE ==============================
+  .ionimg-circle{
+   /*  border-radius: 10px !important;
+    overflow: hidden; */
+    border-radius: 50% !important;
+    overflow: hidden;
+  }
+  //ALSO IN THE FILE src\app\progressive-shell-resolver\shell-elements.scss....UNCOMMENT THE FOLLOWING
+   /* =========== FOR CIRCLED SHELL UNCOMMENT THIS =========== */
+  /* border-radius: 50% !important;
+  overflow: hidden; */
+  /* =========== FOR CIRCLED SHELL UNCOMMENT THIS =========== */
+  //=================== CIRCLE ION-IMAGE ==============================
+
+  //===============************* SHELL RELATED *******========================
+======================================================================================================================
+
+======================================================================================================================
+slider images width x height
+370x260
+======================================================================================================================
+
+======================================================================================================================
+    <span style="font-size: 22px;color: #070731;" class="cookie">Discounts for you</span>
+
+======================================================================================================================
+spaceInUp
+======================================================================================================================
+
+======================================================================================================================
+
+E:\BBAppx>ionic generate page landing
+> ng.cmd generate page landing --project=app
+CREATE src/app/landing/landing-routing.module.ts (351 bytes)
+CREATE src/app/landing/landing.module.ts (479 bytes)
+CREATE src/app/landing/landing.page.html (126 bytes)
+CREATE src/app/landing/landing.page.spec.ts (654 bytes)
+CREATE src/app/landing/landing.page.ts (260 bytes)
+CREATE src/app/landing/landing.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (2715 bytes)
+[OK] Generated page!
+
+E:\BBAppx>ionic generate page splashx
+> ng.cmd generate page splashx --project=app
+CREATE src/app/splashx/splashx-routing.module.ts (351 bytes)
+CREATE src/app/splashx/splashx.module.ts (479 bytes)
+CREATE src/app/splashx/splashx.page.html (126 bytes)
+CREATE src/app/splashx/splashx.page.spec.ts (654 bytes)
+CREATE src/app/splashx/splashx.page.ts (260 bytes)
+CREATE src/app/splashx/splashx.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (2836 bytes)
+[OK] Generated page!
+
+E:\BBAppx>
+
+======================================================================================================================
+https://easyappicon.com/
+https://easyappicon.com/
+https://easyappicon.com/
+======================================================================================================================
+https://medium.com/@dalezak/generate-app-icon-and-splash-screen-images-for-ionic-framework-using-capacitor-e1f8c6ef0fd4
+https://medium.com/@dalezak/generate-app-icon-and-splash-screen-images-for-ionic-framework-using-capacitor-e1f8c6ef0fd4
+https://medium.com/@dalezak/generate-app-icon-and-splash-screen-images-for-ionic-framework-using-capacitor-e1f8c6ef0fd4
+======================================================================================================================
+
+======================================================================================================================
+https://www.designevo.com/logo-maker/
+https://www.designevo.com/logo-maker/
+https://www.designevo.com/logo-maker/
+======================================================================================================================
+https://hotpot.ai/templates/splash-screen
+https://hotpot.ai/templates/splash-screen
+https://hotpot.ai/templates/splash-screen
+
+https://www.spdoctor.com/articles/App_Image_Generator.html
+https://www.spdoctor.com/articles/App_Image_Generator.html
+https://www.spdoctor.com/articles/App_Image_Generator.html
+
+======================================================================================================================
+
+======================================================================================================================
+============================================== ****** ========================================================================
+https://hatchful.shopify.com/your-logos
+https://hatchful.shopify.com/your-logos
+https://hatchful.shopify.com/your-logos
+
+https://resizeimage.net/
+https://resizeimage.net/
+https://resizeimage.net/
+============================================== ****** ========================================================================
+1024 x 1024 - icon
+2732 x 2732 - splash
+======================================================================================================================
+
+======================================================================================================================
+
+E:\BBAppx>ionic cordova resources --icon
+> cordova-res.cmd --type icon
+[cordova-res] Generated 6 resources for Android
+[cordova-res] Generated 28 resources for iOS
+[cordova-res] Wrote to config.xml
+
+E:\BBAppx>ionic cordova resources --splash
+> cordova-res.cmd --type splash
+[cordova-res] Generated 12 resources for Android
+[cordova-res] Generated 19 resources for iOS
+[cordova-res] Wrote to config.xml
+
+E:\BBAppx>
+======================================================================================================================
+
+https://ionicframework.com/docs/v3/intro/deploying/
+
+
+
+E:\BBAppx>ionic cordova platform rm android
+> cordova.cmd platform remove android
+Removing android from cordova.platforms array in package.json
+
+E:\BBAppx>ionic cordova platform add android
+> cordova.cmd platform add android
+Using cordova-fetch for cordova-android@^9.0.0
+Adding android project...
+Creating Cordova project for the Android platform:
+        Path: platforms\android
+        Package: io.ionic.BBAppx
+        Name: BBAppx
+        Activity: MainActivity
+        Android target: android-29
+Subproject Path: CordovaLib
+Subproject Path: app
+Android project created with cordova-android@9.0.0
+Installing "cordova-plugin-device" for android
+Installing "cordova-plugin-file" for android
+
+The Android Persistent storage location now defaults to "Internal". Please check this plugin's README to see if your application needs any changes in its config.xml.
+
+If this is a new application no changes are required.
+
+If this is an update to an existing application that did not specify an "AndroidPersistentFileLocation" you may need to add:
+
+      "<preference name="AndroidPersistentFileLocation" value="Compatibility" />"
+
+to config.xml in order for the application to find previously stored files.
+
+Installing "cordova-plugin-file-opener2" for android
+Subproject Path: CordovaLib
+Subproject Path: app
+Installing "cordova-plugin-file-transfer" for android
+Plugin dependency "cordova-plugin-file@6.0.2" already fetched, using that version.
+Dependent plugin "cordova-plugin-file" already installed on android.
+Installing "cordova-plugin-ionic-keyboard" for android
+Installing "cordova-plugin-ionic-webview" for android
+Subproject Path: CordovaLib
+Subproject Path: app
+Installing "cordova-plugin-network-information" for android
+Installing "cordova-plugin-splashscreen" for android
+Installing "cordova-plugin-statusbar" for android
+Installing "cordova-plugin-whitelist" for android
+
+               This plugin is only applicable for versions of cordova-android greater than 4.0. If you have a previous platform version, you do *not* need this plugin since the whitelist will be built in.
+
+Installing "cordova-plugin-x-toast" for android
+> ionic cordova resources android --force
+> cordova-res.cmd android
+[cordova-res] Generated 18 resources for Android
+[cordova-res] Wrote to config.xml
+
+E:\BBAppx>
+
+
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+======================================================================================================================
+
+E:\>ionic start
+
+Pick a framework!
+
+Please select the JavaScript framework to use for your new app. To bypass this prompt next time, supply a value for the
+--type option.
+
+? Framework: Angular
+
+Every great app needs a name!
+
+Please enter the full name of your app. You can change this at any time. To bypass this prompt next time, supply name,
+the first argument to ionic start.
+
+? Project name: BBAppx
+
+Let's pick the perfect starter template!
+
+Starter templates are ready-to-go Ionic apps that come packed with everything you need to build your app. To bypass this
+prompt next time, supply template, the second argument to ionic start.
+
+? Starter template: sidemenu
+√ Preparing directory .\BBAppx in 2.31ms
+√ Downloading and extracting sidemenu starter in 841.60ms
+? Integrate your new app with Capacitor to target native iOS and Android? No
+
+Installing dependencies may take several minutes.
+
+  ──────────────────────────────────────────────────────────────
+
+        Ionic Appflow, the mobile DevOps solution by Ionic
+
+           Continuously build, deploy, and ship apps
+        Focus on building apps while we automate the rest
+
+        Learn more: https://ion.link/appflow
+
+  ──────────────────────────────────────────────────────────────
+
+
+> npm.cmd i
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated chokidar@2.1.8: Chokidar 2 will break on node v14+. Upgrade to chokidar 3 with 15x less dependencies.
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+
+> core-js@3.6.4 postinstall E:\BBAppx\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+> https://opencollective.com/core-js
+> https://www.patreon.com/zloirock
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> @angular/cli@10.0.8 postinstall E:\BBAppx\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.1.2 (node_modules\rollup\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN notsup Unsupported engine for watchpack-chokidar2@2.0.0: wanted: {"node":"<8.10.0"} (current: {"node":"14.9.0","npm":"6.14.8"})
+npm WARN notsup Not compatible with your version of node/npm: watchpack-chokidar2@2.0.0
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules\watchpack-chokidar2\node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.2.7 (node_modules\webpack-dev-server\node_modules\chokidar\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+added 1503 packages from 1224 contributors and audited 1508 packages in 228.282s
+
+67 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+Join the Ionic Community! �
+
+Connect with millions of developers on the Ionic Forum and get access to live events, news updates, and more.
+
+? Create free Ionic account? No
+
+Your Ionic app is ready! Follow these next steps:
+
+- Go to your new project: cd .\BBAppx
+- Run ionic serve within the app directory to see your app in the browser
+- Run ionic capacitor add to add a native iOS or Android project using Capacitor
+- Generate your app icon and splash screens using cordova-res --skip-config --copy
+- Explore the Ionic docs for components, tutorials, and more: https://ion.link/docs
+- Building an enterprise app? Ionic has Enterprise Support and Features: https://ion.link/enterprise-edition
+
+E:\>
+=====================================================================================================================
+
+E:\BBAppx>npm i -s ionic-image-loader@7.0.0-beta.2
++ ionic-image-loader@7.0.0-beta.2
+added 2 packages from 1 contributor, removed 1 package and audited 1510 packages in 15.31s
+
+67 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+E:\BBAppx>ionic cordova plugin add cordova-plugin-ionic-webview
+
+[WARN] About to integrate your app with Cordova.
+
+       We now recommend Capacitor (https://ion.link/capacitor) as the official native runtime for Ionic. To learn about
+       the differences between Capacitor and Cordova, see these docs[1]. For a getting started guide, see these docs[2].
+
+       [1]: https://ion.link/capacitor-differences-with-cordova-docs
+       [2]: https://ion.link/capacitor-using-with-ionic-docs
+
+? Are you sure you want to continue? Yes
+> ionic integrations enable cordova
+[INFO] Downloading integration cordova
+[INFO] Copying integrations files to project
+CREATE resources
+CREATE resources\splash.png
+CREATE resources\ios
+CREATE resources\ios\splash
+CREATE resources\ios\splash\Default~iphone.png
+CREATE resources\ios\splash\Default@2x~universal~anyany.png
+CREATE resources\ios\splash\Default@2x~iphone.png
+CREATE resources\ios\splash\Default-Portrait~ipad.png
+CREATE resources\ios\splash\Default-Portrait@~ipadpro.png
+CREATE resources\ios\splash\Default-Portrait@2x~ipad.png
+CREATE resources\ios\splash\Default-Landscape~ipad.png
+CREATE resources\ios\splash\Default-Landscape@~ipadpro.png
+CREATE resources\ios\splash\Default-Landscape@2x~ipad.png
+CREATE resources\ios\splash\Default-Landscape-736h.png
+CREATE resources\ios\splash\Default-Landscape-2436h.png
+CREATE resources\ios\splash\Default-736h.png
+CREATE resources\ios\splash\Default-667h.png
+CREATE resources\ios\splash\Default-568h@2x~iphone.png
+CREATE resources\ios\splash\Default-2436h.png
+CREATE resources\ios\icon
+CREATE resources\ios\icon\icon@2x.png
+CREATE resources\ios\icon\icon.png
+CREATE resources\ios\icon\icon-small@3x.png
+CREATE resources\ios\icon\icon-small@2x.png
+CREATE resources\ios\icon\icon-small.png
+CREATE resources\ios\icon\icon-98@2x.png
+CREATE resources\ios\icon\icon-86@2x.png
+CREATE resources\ios\icon\icon-83.5@2x.png
+CREATE resources\ios\icon\icon-76@2x.png
+CREATE resources\ios\icon\icon-76.png
+CREATE resources\ios\icon\icon-72@2x.png
+CREATE resources\ios\icon\icon-72.png
+CREATE resources\ios\icon\icon-60@3x.png
+CREATE resources\ios\icon\icon-60@2x.png
+CREATE resources\ios\icon\icon-60.png
+CREATE resources\ios\icon\icon-50@2x.png
+CREATE resources\ios\icon\icon-50.png
+CREATE resources\ios\icon\icon-44@2x.png
+CREATE resources\ios\icon\icon-40@3x.png
+CREATE resources\ios\icon\icon-40@2x.png
+CREATE resources\ios\icon\icon-40.png
+CREATE resources\ios\icon\icon-29@3x.png
+CREATE resources\ios\icon\icon-29@2x.png
+CREATE resources\ios\icon\icon-29.png
+CREATE resources\ios\icon\icon-27.5@2x.png
+CREATE resources\ios\icon\icon-24@2x.png
+CREATE resources\ios\icon\icon-20@3x.png
+CREATE resources\ios\icon\icon-20@2x.png
+CREATE resources\ios\icon\icon-20.png
+CREATE resources\ios\icon\icon-1024.png
+CREATE resources\icon.png
+CREATE resources\android
+CREATE resources\android\xml
+CREATE resources\android\xml\network_security_config.xml
+CREATE resources\android\splash
+CREATE resources\android\splash\drawable-port-xxxhdpi-screen.png
+CREATE resources\android\splash\drawable-port-xxhdpi-screen.png
+CREATE resources\android\splash\drawable-port-xhdpi-screen.png
+CREATE resources\android\splash\drawable-port-mdpi-screen.png
+CREATE resources\android\splash\drawable-port-ldpi-screen.png
+CREATE resources\android\splash\drawable-port-hdpi-screen.png
+CREATE resources\android\splash\drawable-land-xxxhdpi-screen.png
+CREATE resources\android\splash\drawable-land-xxhdpi-screen.png
+CREATE resources\android\splash\drawable-land-xhdpi-screen.png
+CREATE resources\android\splash\drawable-land-mdpi-screen.png
+CREATE resources\android\splash\drawable-land-ldpi-screen.png
+CREATE resources\android\splash\drawable-land-hdpi-screen.png
+CREATE resources\android\icon
+CREATE resources\android\icon\drawable-xxxhdpi-icon.png
+CREATE resources\android\icon\drawable-xxhdpi-icon.png
+CREATE resources\android\icon\drawable-xhdpi-icon.png
+CREATE resources\android\icon\drawable-mdpi-icon.png
+CREATE resources\android\icon\drawable-ldpi-icon.png
+CREATE resources\android\icon\drawable-hdpi-icon.png
+CREATE resources\README.md
+CREATE config.xml
+[OK] Integration cordova added!
+√ Creating .\www directory for you in 2.56ms
+> cordova.cmd plugin add cordova-plugin-ionic-webview
+Adding cordova-plugin-ionic-webview to package.json
+
+E:\BBAppx>npm install @ionic-native/ionic-webview
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/common@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/core@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @ionic-native/file@^5.0.0-beta.21 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ @ionic-native/ionic-webview@5.28.0
+added 1 package from 1 contributor and audited 1512 packages in 9.293s
+
+67 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+E:\BBAppx>ionic cordova plugin add cordova-plugin-file
+> cordova.cmd plugin add cordova-plugin-file
+Adding cordova-plugin-file to package.json
+
+E:\BBAppx>npm install @ionic-native/file
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/common@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/core@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ @ionic-native/file@5.28.0
+added 1 package from 1 contributor and audited 1514 packages in 10.861s
+
+67 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+E:\BBAppx>ionic cordova plugin add cordova-plugin-file-transfer
+> cordova.cmd plugin add cordova-plugin-file-transfer
+Adding cordova-plugin-file-transfer to package.json
+
+E:\BBAppx>npm install @ionic-native/file-transfer
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/common@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/core@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ @ionic-native/file-transfer@5.28.0
+added 1 package from 1 contributor and audited 1516 packages in 10.753s
+
+67 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+E:\BBAppx>ionic generate page homex
+> ng.cmd generate page homex --project=app
+? Would you like to share anonymous usage data about this project with the Angular Team at
+Google under Google’s Privacy Policy at https://policies.google.com/privacy? For more
+details and how to change this setting, see http://angular.io/analytics. No
+CREATE src/app/homex/homex-routing.module.ts (343 bytes)
+CREATE src/app/homex/homex.module.ts (465 bytes)
+CREATE src/app/homex/homex.page.html (124 bytes)
+CREATE src/app/homex/homex.page.spec.ts (640 bytes)
+CREATE src/app/homex/homex.page.ts (252 bytes)
+CREATE src/app/homex/homex.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (625 bytes)
+[OK] Generated page!
+
+E:\BBAppx>
+
+
+======================================================================================================================
+
+E:\BBAppx>ionic generate page ordersx
+> ng.cmd generate page ordersx --project=app
+CREATE src/app/ordersx/ordersx-routing.module.ts (351 bytes)
+CREATE src/app/ordersx/ordersx.module.ts (479 bytes)
+CREATE src/app/ordersx/ordersx.page.html (126 bytes)
+CREATE src/app/ordersx/ordersx.page.spec.ts (654 bytes)
+CREATE src/app/ordersx/ordersx.page.ts (260 bytes)
+CREATE src/app/ordersx/ordersx.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (773 bytes)
+[OK] Generated page!
+
+E:\BBAppx>ionic generate page loginx
+> ng.cmd generate page loginx --project=app
+CREATE src/app/loginx/loginx-routing.module.ts (347 bytes)
+CREATE src/app/loginx/loginx.module.ts (472 bytes)
+CREATE src/app/loginx/loginx.page.html (125 bytes)
+CREATE src/app/loginx/loginx.page.spec.ts (647 bytes)
+CREATE src/app/loginx/loginx.page.ts (256 bytes)
+CREATE src/app/loginx/loginx.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (890 bytes)
+[OK] Generated page!
+
+E:\BBAppx>ionic generate page aboutx
+> ng.cmd generate page aboutx --project=app
+CREATE src/app/aboutx/aboutx-routing.module.ts (347 bytes)
+CREATE src/app/aboutx/aboutx.module.ts (472 bytes)
+CREATE src/app/aboutx/aboutx.page.html (125 bytes)
+CREATE src/app/aboutx/aboutx.page.spec.ts (647 bytes)
+CREATE src/app/aboutx/aboutx.page.ts (256 bytes)
+CREATE src/app/aboutx/aboutx.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (1007 bytes)
+[OK] Generated page!
+
+E:\BBAppx> 
+======================================================================================================================
+
+E:\BBAppx>npm install --save sweetalert2
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/common@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/core@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ sweetalert2@10.3.5
+added 1 package from 7 contributors, removed 50 packages and audited 1522 packages in 25.337s
+
+68 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+E:\BBAppx>npm i
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/common@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/core@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+updated 1 package and audited 1522 packages in 8.823s
+
+67 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+E:\BBAppx>
+======================================================================================================================
+
+E:\BBAppx>npm install @ionic-native/network
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/common@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/core@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ @ionic-native/network@5.28.0
+added 1 package from 1 contributor and audited 1526 packages in 11.082s
+
+67 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+E:\BBAppx>ionic generate page addItemToCart
+> ng.cmd generate page addItemToCart --project=app
+CREATE src/app/add-item-to-cart/add-item-to-cart-routing.module.ts (378 bytes)
+CREATE src/app/add-item-to-cart/add-item-to-cart.module.ts (527 bytes)
+CREATE src/app/add-item-to-cart/add-item-to-cart.page.html (132 bytes)
+CREATE src/app/add-item-to-cart/add-item-to-cart.page.spec.ts (699 bytes)
+CREATE src/app/add-item-to-cart/add-item-to-cart.page.ts (293 bytes)
+CREATE src/app/add-item-to-cart/add-item-to-cart.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (1161 bytes)
+[OK] Generated page!
+
+E:\BBAppx>ionic generate service cartItemsToDB
+> ng.cmd generate service cartItemsToDB --project=app
+CREATE src/app/cart-items-to-db.service.spec.ts (395 bytes)
+CREATE src/app/cart-items-to-db.service.ts (142 bytes)
+[OK] Generated service!
+
+E:\BBAppx>ionic generate page billCartList
+> ng.cmd generate page billCartList --project=app
+CREATE src/app/bill-cart-list/bill-cart-list-routing.module.ts (373 bytes)
+CREATE src/app/bill-cart-list/bill-cart-list.module.ts (518 bytes)
+CREATE src/app/bill-cart-list/bill-cart-list.page.html (131 bytes)
+CREATE src/app/bill-cart-list/bill-cart-list.page.spec.ts (691 bytes)
+CREATE src/app/bill-cart-list/bill-cart-list.page.ts (286 bytes)
+CREATE src/app/bill-cart-list/bill-cart-list.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (1308 bytes)
+[OK] Generated page!
+
+E:\BBAppx>ionic generate page order-detail
+> ng.cmd generate page order-detail --project=app
+CREATE src/app/order-detail/order-detail-routing.module.ts (368 bytes)
+CREATE src/app/order-detail/order-detail.module.ts (509 bytes)
+CREATE src/app/order-detail/order-detail.page.html (131 bytes)
+CREATE src/app/order-detail/order-detail.page.spec.ts (683 bytes)
+CREATE src/app/order-detail/order-detail.page.ts (279 bytes)
+CREATE src/app/order-detail/order-detail.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (1448 bytes)
+[OK] Generated page!
+
+E:\BBAppx>
+======================================================================================================================
+
+E:\BBAppx>npm install firebase @angular/fire --save
+
+> core-js@3.6.5 postinstall E:\BBAppx\node_modules\@firebase\polyfill\node_modules\core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+> https://opencollective.com/core-js
+> https://www.patreon.com/zloirock
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+
+> protobufjs@6.10.1 postinstall E:\BBAppx\node_modules\protobufjs
+> node scripts/postinstall
+
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/common@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/core@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ @angular/fire@6.0.3
++ firebase@7.22.0
+added 105 packages from 81 contributors, removed 1 package and audited 1680 packages in 44.971s
+
+70 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+E:\BBAppx>
+======================================================================================================================
+
+E:\BBAppx>ng generate page make-appointment
+CREATE src/app/make-appointment/make-appointment-routing.module.ts (384 bytes)
+CREATE src/app/make-appointment/make-appointment.module.ts (537 bytes)
+CREATE src/app/make-appointment/make-appointment.page.html (135 bytes)
+CREATE src/app/make-appointment/make-appointment.page.spec.ts (711 bytes)
+CREATE src/app/make-appointment/make-appointment.page.ts (295 bytes)
+CREATE src/app/make-appointment/make-appointment.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (1604 bytes)
+
+E:\BBAppx>ng generate page edit-appointment
+CREATE src/app/edit-appointment/edit-appointment-routing.module.ts (384 bytes)
+CREATE src/app/edit-appointment/edit-appointment.module.ts (537 bytes)
+CREATE src/app/edit-appointment/edit-appointment.page.html (135 bytes)
+CREATE src/app/edit-appointment/edit-appointment.page.spec.ts (711 bytes)
+CREATE src/app/edit-appointment/edit-appointment.page.ts (295 bytes)
+CREATE src/app/edit-appointment/edit-appointment.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (1760 bytes)
+
+E:\BBAppx>ng generate service shared/appointment
+ERROR! src/app/shared/appointment.service.spec.ts already exists.
+ERROR! src/app/shared/appointment.service.ts already exists.
+The Schematic workflow failed. See above.
+
+E:\BBAppx>
+======================================================================================================================
+
+E:\BBAppx>ionic generate page notifications
+> ng.cmd generate page notifications --project=app
+CREATE src/app/notifications/notifications-routing.module.ts (375 bytes)
+CREATE src/app/notifications/notifications.module.ts (521 bytes)
+CREATE src/app/notifications/notifications.page.html (132 bytes)
+CREATE src/app/notifications/notifications.page.spec.ts (696 bytes)
+CREATE src/app/notifications/notifications.page.ts (284 bytes)
+CREATE src/app/notifications/notifications.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (1905 bytes)
+[OK] Generated page!
+
+E:\BBAppx>
+======================================================================================================================
+
+E:\BBAppx>ionic generate page categoriesDetail
+> ng.cmd generate page categoriesDetail --project=app
+CREATE src/app/categories-detail/categories-detail-routing.module.ts (388 bytes)
+CREATE src/app/categories-detail/categories-detail.module.ts (544 bytes)
+CREATE src/app/categories-detail/categories-detail.page.html (135 bytes)
+CREATE src/app/categories-detail/categories-detail.page.spec.ts (718 bytes)
+CREATE src/app/categories-detail/categories-detail.page.ts (299 bytes)
+CREATE src/app/categories-detail/categories-detail.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (2416 bytes)
+[OK] Generated page!
+
+E:\BBAppx>
+======================================================================================================================
+
+E:\BBAppx>ionic cordova plugin add cordova-plugin-file-opener2
+> cordova.cmd plugin add cordova-plugin-file-opener2
+Installing "cordova-plugin-file-opener2" for android
+Subproject Path: CordovaLib
+Subproject Path: app
+Adding cordova-plugin-file-opener2 to package.json
+
+E:\BBAppx>npm install @ionic-native/file-opener
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/common@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN ionic-image-loader@7.0.0-beta.2 requires a peer of @angular/core@^6.0.0-rc.0 || ^6.0.0 || ^7.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\watchpack-chokidar2\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ @ionic-native/file-opener@5.28.0
+added 1 package from 1 contributor and audited 1682 packages in 11.425s
+
+70 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+E:\BBAppx>
+======================================================================================================================
+FIREBASE STORAGE RULES:
+======================
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+
+
+allow read, write;
+=============================================
+https://stackoverflow.com/questions/38661958/making-firebase-storage-public-for-reading-and-writing-on-android
+======================================================================================================================
+https://github.com/zyra/ionic-image-loader/issues
+======================================================================================================================
+
+======================================================================================================================
+Telugu grammar
+https://youtu.be/zPrXFfifK1c
+======================================================================================================================
+<img [src]="act.image" alt="Missing image" onerror="this.onerror=null;this.src='assets/imgs/default.jpg';" />
+
+======================================================================================================================
+https://stackoverflow.com/questions/61031002/ionic-5-virtualscroll-and-images-caching
+
+======================================================================================================================
+
+======================================================================================================================
+PRODUCTION BUILD:
+===============
+HOW TO REDUCE THE SIZE OF THE APK FILE:
+--------------------------------------
+
+1. You should use --prod flag while building apk for production. It minimizes the size by compressing the files.
+	*************** USE THIS ONLY **************
+	ionic cordova build android --prod --release
+	ionic cordova build android --prod --release
+	*************** USE THIS ONLY **************
+	ionic cordova build --release android
+2. Run cordova clean to cleanup project from build artifacts.
+	
+	cordova clean
+-----------------------------------------------------------------------------------------
+
+naresh@DESKTOP-6CLSK89 MINGW64 /d/testapp (master)
+$ cordova clean
+Checking Java JDK and Android SDK versions
+ANDROID_SDK_ROOT=undefined (recommended setting)
+ANDROID_HOME=D:\Android\android-sdk-windows (DEPRECATED)
+Subproject Path: CordovaLib
+Subproject Path: app
+> Task :clean UP-TO-DATE
+> Task :app:clean
+> Task :CordovaLib:clean
+
+BUILD SUCCESSFUL in 4s
+3 actionable tasks: 2 executed, 1 up-to-date
+
+naresh@DESKTOP-6CLSK89 MINGW64 /d/testapp (master)
+$
+=========================================================================================
+After Building Production Release - app-debug.apk = 2,209 KB
+=========================================================================================
+=========================================================================================
+
+=========================================================================================
+IN "D:\testApp\angular.json" ADD THE FOLLOWING:
+-----------------------------------------------
+{
+"input": "src/theme/fonts.scss"
+},
+----------------------------------------------
+"styles": [
+{
+"input": "src/theme/fonts.scss"
+},
+{
+"input": "src/theme/variables.scss"
+},
+{
+"input": "src/global.scss"
+}
+],
+=========================================================================================
+
+=========================================================================================
+cordova cleanup
+*************** USE THIS ONLY **************
+ionic cordova build android --prod --release
+ionic cordova build android --prod --release
+*************** USE THIS ONLY **************
+=========================================================================================
+
+naresh@DESKTOP-6CLSK89 MINGW64 /d/testapp (master)
+$ cordova clean
+Checking Java JDK and Android SDK versions
+ANDROID_SDK_ROOT=undefined (recommended setting)
+ANDROID_HOME=D:\Android\android-sdk-windows (DEPRECATED)
+Subproject Path: CordovaLib
+Subproject Path: app
+> Task :clean
+> Task :app:clean
+> Task :CordovaLib:clean
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 3 executed
+
+naresh@DESKTOP-6CLSK89 MINGW64 /d/testapp (master)
+$
+
+
+=========================================================================================
+======================================================================================================================
+SPLASH AND ICON:
+===============
+============================================== ****** ========================================================================
+https://hatchful.shopify.com/your-logos
+https://hatchful.shopify.com/your-logos
+https://hatchful.shopify.com/your-logos
+
+https://resizeimage.net/
+https://resizeimage.net/
+https://resizeimage.net/
+============================================== ****** ========================================================================
+======================================================================================================================
+for splash screen....
+use an image created with 500 x 500 pixels
+upload it in the following website
+https://resizeimage.net/
+and resize it to 
+2732 x 2732
+
+for creating logos
+use https://hatchful.shopify.com/
+
+======================================================================================================================
+STAGGER CSS:
+============
+https://www.30secondsofcode.org/css/s/staggered-animation
+https://cloudfour.com/thinks/staggered-animations-with-css-custom-properties/
+
+http://digitalfio.github.io/Stagger.css/
+http://digitalfio.github.io/Stagger.css/
+http://digitalfio.github.io/Stagger.css/
+http://jsbin.com/cusuz/4
+http://jsbin.com/cusuz/4
+http://jsbin.com/cusuz/4
+======================================================================================================================
+<!-- <ion-row style="padding:5px">
+  <ion-col size="3" class="animated slideInLeft _{{i}}" (click)="categoriesDetail(item)"
+  *ngFor="let item of routeResolveData3?.categories;let i = index" style="background-color: #FFF; padding: 10px;">
+    <div class="image-shell-curved">       
+       <ion-img *ngIf="item?.cover" class="xx ionimg-curved"
+            [src]="item?.cover" 
+            alt="" style="width: 100%; height: 100%;object-fit: cover;"></ion-img>      
+    </div>
+    <h5 class="text-shell" style="margin-top: 5px; min-height: 22px;text-align: center;"
+      [ngClass]="{'text-loaded': item?.title}">
+      <span style="font-weight: bold" class="xx cookie">{{ item?.title }}</span>
+    </h5>  
+  </ion-col>
+</ion-row>
+======================================================================================================================
+
+======================================================================================================================
+
+E:\BBAppx>ionic generate page testx
+> ng.cmd generate page testx --project=app
+CREATE src/app/testx/testx-routing.module.ts (343 bytes)
+CREATE src/app/testx/testx.module.ts (465 bytes)
+CREATE src/app/testx/testx.page.html (124 bytes)
+CREATE src/app/testx/testx.page.spec.ts (640 bytes)
+CREATE src/app/testx/testx.page.ts (252 bytes)
+CREATE src/app/testx/testx.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (2117 bytes)
+[OK] Generated page!
+
+E:\BBAppx>
+======================================================================================================================
+navigator['app'].exitApp(); // work for ionic 4
+https://ionicframework.com/docs/developing/hardware-back-button
+
+
+D:\BBAppx-13-10-2020>ionic generate page exitx
+> ng.cmd generate page exitx
+CREATE src/app/exitx/exitx-routing.module.ts (343 bytes)
+CREATE src/app/exitx/exitx.module.ts (465 bytes)
+CREATE src/app/exitx/exitx.page.html (124 bytes)
+CREATE src/app/exitx/exitx.page.spec.ts (640 bytes)
+CREATE src/app/exitx/exitx.page.ts (252 bytes)
+CREATE src/app/exitx/exitx.page.scss (0 bytes)
+UPDATE src/app/app-routing.module.ts (2291 bytes)
+[OK] Generated page!
+
+D:\BBAppx-13-10-2020>
+======================================================================================================================
+
+======================================================================================================================
+{
+  "rules": {
+    ".read": "now < 1603650600000",  // 2020-10-26
+    ".write": "now < 1603650600000",  // 2020-10-26
+  }
+}
+======================================================================================================================
+{
+  "rules": {
+    ".read": true,  // 2020-10-26
+    ".write": true,  // 2020-10-26
+  }
+}
+======================================================================================================================
+
+======================================================================================================================
+
+E:\BBAppx-11-11-2020>ionic cordova build android
+> ng.cmd run app:ionic-cordova-build --platform=android
+Warning: Entry point 'ionic-image-loader' contains deep imports into 'E:/BBAppx-11-11-2020/node_modules/@ionic-native/file/ngx/index', 'E:/BBAppx-11-11-2020/node_modules/@ionic-native/ionic-webview/ngx/index'. This is probably not a problem, but may cause the compilation of entry points to be out of order.
+Generating ES5 bundles for differential loading...
+ES5 bundle generation complete.
+
+chunk {3} 3-es2015.js, 3-es2015.js.map () 6.16 kB  [rendered]
+chunk {3} 3-es5.js, 3-es5.js.map () 8.09 kB  [rendered]
+chunk {6} 6-es2015.js, 6-es2015.js.map () 33.4 kB  [rendered]
+chunk {6} 6-es5.js, 6-es5.js.map () 37.9 kB  [rendered]
+chunk {17} 17-es2015.js, 17-es2015.js.map () 70.7 kB  [rendered]
+chunk {17} 17-es5.js, 17-es5.js.map () 78.7 kB  [rendered]
+chunk {0} 0-es2015.js, 0-es2015.js.map () 31.2 kB  [rendered]
+chunk {0} 0-es5.js, 0-es5.js.map () 37.8 kB  [rendered]
+chunk {1} 1-es2015.js, 1-es2015.js.map () 50.3 kB  [rendered]
+chunk {1} 1-es5.js, 1-es5.js.map () 59.6 kB  [rendered]
+chunk {5} 5-es2015.js, 5-es2015.js.map () 3.72 kB  [rendered]
+chunk {5} 5-es5.js, 5-es5.js.map () 5.53 kB  [rendered]
+chunk {16} 16-es2015.js, 16-es2015.js.map () 32.9 kB  [rendered]
+chunk {16} 16-es5.js, 16-es5.js.map () 45.4 kB  [rendered]
+chunk {19} 19-es2015.js, 19-es2015.js.map () 34.7 kB  [rendered]
+chunk {19} 19-es5.js, 19-es5.js.map () 50.9 kB  [rendered]
+chunk {7} 7-es2015.js, 7-es2015.js.map () 16.6 kB  [rendered]
+chunk {7} 7-es5.js, 7-es5.js.map () 19.7 kB  [rendered]
+chunk {2} 2-es2015.js, 2-es2015.js.map () 67.1 kB  [rendered]
+chunk {2} 2-es5.js, 2-es5.js.map () 92.8 kB  [rendered]
+chunk {8} 8-es2015.js, 8-es2015.js.map () 11.4 kB  [rendered]
+chunk {8} 8-es5.js, 8-es5.js.map () 14.2 kB  [rendered]
+chunk {9} 9-es2015.js, 9-es2015.js.map () 9.69 kB  [rendered]
+chunk {9} 9-es5.js, 9-es5.js.map () 11.1 kB  [rendered]
+chunk {10} 10-es2015.js, 10-es2015.js.map () 16.3 kB  [rendered]
+chunk {10} 10-es5.js, 10-es5.js.map () 20.7 kB  [rendered]
+chunk {add-item-to-cart-add-item-to-cart-module} add-item-to-cart-add-item-to-cart-module-es2015.js, add-item-to-cart-add-item-to-cart-module-es2015.js.map (add-item-to-cart-add-item-to-cart-module) 42 kB  [rendered]
+chunk {add-item-to-cart-add-item-to-cart-module} add-item-to-cart-add-item-to-cart-module-es5.js, add-item-to-cart-add-item-to-cart-module-es5.js.map (add-item-to-cart-add-item-to-cart-module) 45 kB  [rendered]
+chunk {31} 31-es2015.js, 31-es2015.js.map () 37.6 kB  [rendered]
+chunk {31} 31-es5.js, 31-es5.js.map () 46.9 kB  [rendered]
+chunk {30} 30-es2015.js, 30-es2015.js.map () 33.4 kB  [rendered]
+chunk {30} 30-es5.js, 30-es5.js.map () 38.8 kB  [rendered]
+chunk {12} 12-es2015.js, 12-es2015.js.map () 27.3 kB  [rendered]
+chunk {12} 12-es5.js, 12-es5.js.map () 32.4 kB  [rendered]
+chunk {4} 4-es2015.js, 4-es2015.js.map () 16.3 kB  [rendered]
+chunk {4} 4-es5.js, 4-es5.js.map () 20.6 kB  [rendered]
+chunk {26} 26-es2015.js, 26-es2015.js.map () 50.4 kB  [rendered]
+chunk {26} 26-es5.js, 26-es5.js.map () 68.6 kB  [rendered]
+chunk {21} 21-es2015.js, 21-es2015.js.map () 36.7 kB  [rendered]
+chunk {21} 21-es5.js, 21-es5.js.map () 56.6 kB  [rendered]
+chunk {13} 13-es2015.js, 13-es2015.js.map () 3.66 kB  [rendered]
+chunk {13} 13-es5.js, 13-es5.js.map () 5.51 kB  [rendered]
+chunk {33} 33-es2015.js, 33-es2015.js.map () 58.1 kB  [rendered]
+chunk {33} 33-es5.js, 33-es5.js.map () 79.6 kB  [rendered]
+chunk {bill-cart-list-bill-cart-list-module} bill-cart-list-bill-cart-list-module-es2015.js, bill-cart-list-bill-cart-list-module-es2015.js.map (bill-cart-list-bill-cart-list-module) 41.5 kB  [rendered]
+chunk {bill-cart-list-bill-cart-list-module} bill-cart-list-bill-cart-list-module-es5.js, bill-cart-list-bill-cart-list-module-es5.js.map (bill-cart-list-bill-cart-list-module) 44.4 kB  [rendered]
+chunk {polyfills} polyfills-es2015.js, polyfills-es2015.js.map (polyfills) 268 kB [initial] [rendered]
+chunk {15} 15-es2015.js, 15-es2015.js.map () 20.8 kB  [rendered]
+chunk {15} 15-es5.js, 15-es5.js.map () 26.4 kB  [rendered]
+chunk {18} 18-es2015.js, 18-es2015.js.map () 16.1 kB  [rendered]
+chunk {18} 18-es5.js, 18-es5.js.map () 20.5 kB  [rendered]
+chunk {11} 11-es2015.js, 11-es2015.js.map () 80.1 kB  [rendered]
+chunk {11} 11-es5.js, 11-es5.js.map () 100 kB  [rendered]
+chunk {20} 20-es2015.js, 20-es2015.js.map () 29.3 kB  [rendered]
+chunk {20} 20-es5.js, 20-es5.js.map () 36.8 kB  [rendered]
+chunk {categories-detail-categories-detail-module} categories-detail-categories-detail-module-es2015.js, categories-detail-categories-detail-module-es2015.js.map (categories-detail-categories-detail-module) 49.6 kB  [rendered]
+chunk {categories-detail-categories-detail-module} categories-detail-categories-detail-module-es5.js, categories-detail-categories-detail-module-es5.js.map (categories-detail-categories-detail-module) 50.7 kB  [rendered]
+chunk {14} 14-es2015.js, 14-es2015.js.map () 14.2 kB  [rendered]
+chunk {14} 14-es5.js, 14-es5.js.map () 20 kB  [rendered]
+chunk {main} main-es2015.js, main-es2015.js.map (main) 39.2 kB [initial] [rendered]
+chunk {main} main-es5.js, main-es5.js.map (main) 44.1 kB [initial] [rendered]
+chunk {22} 22-es2015.js, 22-es2015.js.map () 22.6 kB  [rendered]
+chunk {22} 22-es5.js, 22-es5.js.map () 28.2 kB  [rendered]
+chunk {homexshell-homexshell-module} homexshell-homexshell-module-es2015.js, homexshell-homexshell-module-es2015.js.map (homexshell-homexshell-module) 120 kB  [rendered]
+chunk {homexshell-homexshell-module} homexshell-homexshell-module-es5.js, homexshell-homexshell-module-es5.js.map (homexshell-homexshell-module) 132 kB  [rendered]
+chunk {23} 23-es2015.js, 23-es2015.js.map () 21.6 kB  [rendered]
+chunk {23} 23-es5.js, 23-es5.js.map () 23.5 kB  [rendered]
+chunk {24} 24-es2015.js, 24-es2015.js.map () 15.5 kB  [rendered]
+chunk {24} 24-es5.js, 24-es5.js.map () 23.8 kB  [rendered]
+chunk {27} 27-es2015.js, 27-es2015.js.map () 13.4 kB  [rendered]
+chunk {27} 27-es5.js, 27-es5.js.map () 19.4 kB  [rendered]
+chunk {progressive-shell-resolver-progressive-shell-resolver-module} progressive-shell-resolver-progressive-shell-resolver-module-es2015.js, progressive-shell-resolver-progressive-shell-resolver-module-es2015.js.map (progressive-shell-resolver-progressive-shell-resolver-module) 40.7 kB  [rendered]
+chunk {progressive-shell-resolver-progressive-shell-resolver-module} progressive-shell-resolver-progressive-shell-resolver-module-es5.js, progressive-shell-resolver-progressive-shell-resolver-module-es5.js.map (progressive-shell-resolver-progressive-shell-resolver-module) 46.4 kB  [rendered]
+chunk {28} 28-es2015.js, 28-es2015.js.map () 6.59 kB  [rendered]
+chunk {28} 28-es5.js, 28-es5.js.map () 10 kB  [rendered]
+chunk {styles} styles-es2015.js, styles-es2015.js.map (styles) 109 kB [initial] [rendered]
+chunk {styles} styles-es5.js, styles-es5.js.map (styles) 113 kB [initial] [rendered]
+chunk {ordersx-ordersx-module} ordersx-ordersx-module-es2015.js, ordersx-ordersx-module-es2015.js.map (ordersx-ordersx-module) 236 kB  [rendered]
+chunk {ordersx-ordersx-module} ordersx-ordersx-module-es5.js, ordersx-ordersx-module-es5.js.map (ordersx-ordersx-module) 276 kB  [rendered]
+chunk {25} 25-es2015.js, 25-es2015.js.map () 27.9 kB  [rendered]
+chunk {25} 25-es5.js, 25-es5.js.map () 34.8 kB  [rendered]
+chunk {testx-testx-module} testx-testx-module-es2015.js, testx-testx-module-es2015.js.map (testx-testx-module) 47.5 kB  [rendered]
+chunk {testx-testx-module} testx-testx-module-es5.js, testx-testx-module-es5.js.map (testx-testx-module) 52.6 kB  [rendered]
+chunk {29} 29-es2015.js, 29-es2015.js.map () 26.5 kB  [rendered]
+chunk {29} 29-es5.js, 29-es5.js.map () 56.8 kB  [rendered]
+chunk {polyfills-dom} polyfills-dom-es2015.js, polyfills-dom-es2015.js.map (polyfills-dom) 38.5 kB  [rendered]
+chunk {polyfills-dom} polyfills-dom-es5.js, polyfills-dom-es5.js.map (polyfills-dom) 65.7 kB  [rendered]
+chunk {35} 35-es2015.js, 35-es2015.js.map () 9.96 kB  [rendered]
+chunk {35} 35-es5.js, 35-es5.js.map () 12.3 kB  [rendered]
+chunk {32} 32-es2015.js, 32-es2015.js.map () 25.5 kB  [rendered]
+chunk {32} 32-es5.js, 32-es5.js.map () 37.5 kB  [rendered]
+chunk {34} 34-es2015.js, 34-es2015.js.map () 8.3 kB  [rendered]
+chunk {34} 34-es5.js, 34-es5.js.map () 10.2 kB  [rendered]
+chunk {36} 36-es2015.js, 36-es2015.js.map () 24.1 kB  [rendered]
+chunk {36} 36-es5.js, 36-es5.js.map () 27.7 kB  [rendered]
+chunk {37} 37-es2015.js, 37-es2015.js.map () 8.54 kB  [rendered]
+chunk {37} 37-es5.js, 37-es5.js.map () 18.6 kB  [rendered]
+chunk {38} 38-es2015.js, 38-es2015.js.map () 1.88 kB  [rendered]
+chunk {38} 38-es5.js, 38-es5.js.map () 3.21 kB  [rendered]
+chunk {40} 40-es2015.js, 40-es2015.js.map () 23.1 kB  [rendered]
+chunk {40} 40-es5.js, 40-es5.js.map () 30.5 kB  [rendered]
+chunk {39} 39-es2015.js, 39-es2015.js.map () 18.2 kB  [rendered]
+chunk {39} 39-es5.js, 39-es5.js.map () 23.9 kB  [rendered]
+chunk {41} 41-es2015.js, 41-es2015.js.map () 17.2 kB  [rendered]
+chunk {41} 41-es5.js, 41-es5.js.map () 22.2 kB  [rendered]
+chunk {aboutx-aboutx-module} aboutx-aboutx-module-es2015.js, aboutx-aboutx-module-es2015.js.map (aboutx-aboutx-module) 12.8 kB  [rendered]
+chunk {aboutx-aboutx-module} aboutx-aboutx-module-es5.js, aboutx-aboutx-module-es5.js.map (aboutx-aboutx-module) 14.8 kB  [rendered]
+chunk {polyfills-core-js} polyfills-core-js-es2015.js, polyfills-core-js-es2015.js.map (polyfills-core-js) 92.4 kB  [rendered]
+chunk {polyfills-core-js} polyfills-core-js-es5.js, polyfills-core-js-es5.js.map (polyfills-core-js) 189 kB  [rendered]
+chunk {42} 42-es2015.js, 42-es2015.js.map () 19.9 kB  [rendered]
+chunk {42} 42-es5.js, 42-es5.js.map () 30.1 kB  [rendered]
+chunk {exitx-exitx-module} exitx-exitx-module-es2015.js, exitx-exitx-module-es2015.js.map (exitx-exitx-module) 10.1 kB  [rendered]
+chunk {exitx-exitx-module} exitx-exitx-module-es5.js, exitx-exitx-module-es5.js.map (exitx-exitx-module) 12.2 kB  [rendered]
+chunk {focus-visible-15ada7f7-js} focus-visible-15ada7f7-js-es2015.js, focus-visible-15ada7f7-js-es2015.js.map (focus-visible-15ada7f7-js) 2.12 kB  [rendered]
+chunk {focus-visible-15ada7f7-js} focus-visible-15ada7f7-js-es5.js, focus-visible-15ada7f7-js-es5.js.map (focus-visible-15ada7f7-js) 2.52 kB  [rendered]
+chunk {common} common-es2015.js, common-es2015.js.map (common) 19.3 kB  [rendered]
+chunk {common} common-es5.js, common-es5.js.map (common) 27 kB  [rendered]
+chunk {firebase-auth} firebase-auth-es2015.js, firebase-auth-es2015.js.map (firebase-auth) 177 kB  [rendered]
+chunk {firebase-auth} firebase-auth-es5.js, firebase-auth-es5.js.map (firebase-auth) 304 kB  [rendered]
+chunk {keyboard-dd970efc-js} keyboard-dd970efc-js-es2015.js, keyboard-dd970efc-js-es2015.js.map (keyboard-dd970efc-js) 6.16 kB  [rendered]
+chunk {keyboard-dd970efc-js} keyboard-dd970efc-js-es5.js, keyboard-dd970efc-js-es5.js.map (keyboard-dd970efc-js) 7.54 kB  [rendered]
+chunk {landing-landing-module} landing-landing-module-es2015.js, landing-landing-module-es2015.js.map (landing-landing-module) 29.5 kB  [rendered]
+chunk {landing-landing-module} landing-landing-module-es5.js, landing-landing-module-es5.js.map (landing-landing-module) 32.9 kB  [rendered]
+chunk {input-shims-4f0dbb39-js} input-shims-4f0dbb39-js-es2015.js, input-shims-4f0dbb39-js-es2015.js.map (input-shims-4f0dbb39-js) 16.3 kB  [rendered]
+chunk {input-shims-4f0dbb39-js} input-shims-4f0dbb39-js-es5.js, input-shims-4f0dbb39-js-es5.js.map (input-shims-4f0dbb39-js) 22.4 kB  [rendered]
+chunk {notifications-notifications-module} notifications-notifications-module-es2015.js, notifications-notifications-module-es2015.js.map (notifications-notifications-module) 11.2 kB  [rendered]
+chunk {notifications-notifications-module} notifications-notifications-module-es5.js, notifications-notifications-module-es5.js.map (notifications-notifications-module) 13.3 kB  [rendered]
+chunk {order-detail-order-detail-module} order-detail-order-detail-module-es2015.js, order-detail-order-detail-module-es2015.js.map (order-detail-order-detail-module) 7.41 kB  [rendered]
+chunk {order-detail-order-detail-module} order-detail-order-detail-module-es5.js, order-detail-order-detail-module-es5.js.map (order-detail-order-detail-module) 9.41 kB  [rendered]
+chunk {runtime} runtime-es2015.js, runtime-es2015.js.map (runtime) 10.4 kB [entry] [rendered]
+chunk {runtime} runtime-es5.js, runtime-es5.js.map (runtime) 10.4 kB [entry] [rendered]
+chunk {polyfills-css-shim} polyfills-css-shim-es2015.js, polyfills-css-shim-es2015.js.map (polyfills-css-shim) 10.5 kB  [rendered]
+chunk {polyfills-css-shim} polyfills-css-shim-es5.js, polyfills-css-shim-es5.js.map (polyfills-css-shim) 15.4 kB  [rendered]
+chunk {shadow-css-c63963b5-js} shadow-css-c63963b5-js-es2015.js, shadow-css-c63963b5-js-es2015.js.map (shadow-css-c63963b5-js) 15.9 kB  [rendered]
+chunk {shadow-css-c63963b5-js} shadow-css-c63963b5-js-es5.js, shadow-css-c63963b5-js-es5.js.map (shadow-css-c63963b5-js) 19.6 kB  [rendered]
+chunk {status-tap-0b3e89c4-js} status-tap-0b3e89c4-js-es2015.js, status-tap-0b3e89c4-js-es2015.js.map (status-tap-0b3e89c4-js) 1.61 kB  [rendered]
+chunk {status-tap-0b3e89c4-js} status-tap-0b3e89c4-js-es5.js, status-tap-0b3e89c4-js-es5.js.map (status-tap-0b3e89c4-js) 1.88 kB  [rendered]
+chunk {splashx-splashx-module} splashx-splashx-module-es2015.js, splashx-splashx-module-es2015.js.map (splashx-splashx-module) 16.9 kB  [rendered]
+chunk {splashx-splashx-module} splashx-splashx-module-es5.js, splashx-splashx-module-es5.js.map (splashx-splashx-module) 19 kB  [rendered]
+chunk {swipe-back-0a6a44c8-js} swipe-back-0a6a44c8-js-es2015.js, swipe-back-0a6a44c8-js-es2015.js.map (swipe-back-0a6a44c8-js) 3.06 kB  [rendered]
+chunk {swipe-back-0a6a44c8-js} swipe-back-0a6a44c8-js-es5.js, swipe-back-0a6a44c8-js-es5.js.map (swipe-back-0a6a44c8-js) 3.45 kB  [rendered]
+chunk {swiper-bundle-95afeea2-js} swiper-bundle-95afeea2-js-es2015.js, swiper-bundle-95afeea2-js-es2015.js.map (swiper-bundle-95afeea2-js) 200 kB  [rendered]
+chunk {swiper-bundle-95afeea2-js} swiper-bundle-95afeea2-js-es5.js, swiper-bundle-95afeea2-js-es5.js.map (swiper-bundle-95afeea2-js) 250 kB  [rendered]
+chunk {tap-click-252af35a-js} tap-click-252af35a-js-es2015.js, tap-click-252af35a-js-es2015.js.map (tap-click-252af35a-js) 6.23 kB  [rendered]
+chunk {tap-click-252af35a-js} tap-click-252af35a-js-es5.js, tap-click-252af35a-js-es5.js.map (tap-click-252af35a-js) 7.11 kB  [rendered]
+chunk {polyfills-es5} polyfills-es5.js, polyfills-es5.js.map (polyfills-es5) 735 kB [initial] [rendered]
+chunk {vendor} vendor-es2015.js, vendor-es2015.js.map (vendor) 5.77 MB [initial] [rendered]
+chunk {vendor} vendor-es5.js, vendor-es5.js.map (vendor) 6.97 MB [initial] [rendered]
+chunk {cordova} cordova.js, cordova.js.map (cordova) 61.8 kB [entry] [rendered]
+Date: 2020-11-12T13:03:17.661Z - Hash: 301bd9e895e4850febbb - Time: 56982ms
+
+WARNING in E:\BBAppx-11-11-2020\src\test.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in E:\BBAppx-11-11-2020\src\app\cart-items-to-db.service.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in E:\BBAppx-11-11-2020\src\app\components\text-shell\text-shell.component.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in E:\BBAppx-11-11-2020\src\app\components\image-shell\image-shell.component.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in E:\BBAppx-11-11-2020\src\app\components\components.module.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in E:\BBAppx-11-11-2020\src\environments\environment.prod.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+WARNING in E:\BBAppx-11-11-2020\node_modules\@angular\fire\__ivy_ngcc__\fesm2015\angular-fire-database.js depends on 'firebase/app'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+WARNING in E:\BBAppx-11-11-2020\node_modules\@angular\fire\__ivy_ngcc__\fesm2015\angular-fire-database.js depends on '@firebase/database'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+
+WARNING in E:\BBAppx-11-11-2020\node_modules\firebase\auth\dist\index.esm.js depends on '@firebase/auth'. CommonJS or AMD dependencies can cause optimization bailouts.
+For more info see: https://angular.io/guide/build#configuring-commonjs-dependencies
+> cordova.cmd build android
+Checking Java JDK and Android SDK versions
+ANDROID_SDK_ROOT=D:\Android\android-sdk (recommended setting)
+ANDROID_HOME=D:\Android\android-sdk (DEPRECATED)
+Using Android SDK: D:\Android\android-sdk
+Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+BUILD SUCCESSFUL in 13s
+1 actionable task: 1 executed
+Subproject Path: CordovaLib
+Subproject Path: app
+Starting a Gradle Daemon, 1 incompatible and 1 stopped Daemons could not be reused, use --status for details
+
+> Task :app:compileDebugJavaWithJavac
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 32s
+40 actionable tasks: 40 executed
+Built the following apk(s):
+        E:\BBAppx-11-11-2020\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+
+E:\BBAppx-11-11-2020> 
+
+
+
+
+{"items":{"description":"fruity","discount":10,"image":"https://firebasestorage.googleapis.com/v0/b/bbapp-a4a47.appspot.com/o/categoriesproducts%2FFRUIT%20JAM?alt=media&token=0b9fd6bd-79db-48d4-9775-c4e89851c12d","imgFlg":true,"name":"FRUIT JAM","oldrate":"150.50","qty":"200gms","rate":"155.25"}},{"items":{"description":"green","discount":5.5,"image":"https://firebasestorage.googleapis.com/v0/b/bbapp-a4a47.appspot.com/o/categoriesproducts%2FCoriander?alt=media&token=344610fd-f3ab-4279-b91a-3aefb561162e","imgFlg":true,"name":"Coriander","oldrate":"115.00","qty":"1 Nos.","rate":"120.25"}},{"items":{"description":"tester desc","discount":6,"image":"https://firebasestorage.googleapis.com/v0/b/bbapp-a4a47.appspot.com/o/categoriesproducts%2Ftester?alt=media&token=801869ef-e5ab-4b11-8846-9449551ec219","imgFlg":true,"name":"tester","oldrate":"105.50","qty":"500gms","rate":"110.50"}}]
+
+
+
+
+[{"name":"Fruit Jam","image":"https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/recipes/ew_fresh_fruit_jam_recipe/280x190_ew_fresh_fruit_jam_recipe.jpg","imgFlg":"true","rate":"100.00","oldrate":"120.00","qty":"330gms","description":"some description"},{"name":"Garlic Pickle","image":"https://www.mothersrecipe.com/wp-content/uploads/2020/06/Garlic-300x300.jpg","imgFlg":"true","rate":"125.00","oldrate":"130.00","qty":"330gms","discount":"10%","description":"some description"},{"name":"Butter","image":"https://static.toiimg.com/photo/70121659.cms","imgFlg":"true","rate":"200.00","oldrate":"220.00","qty":"330gms","discount":"5%","description":"some description"},{"name":"Olive Pickle","image":"https://i.ytimg.com/vi/Beyw-vf38xU/maxresdefault.jpg","imgFlg":"true","rate":"325.00","oldrate":"350.00","qty":"330gms","discount":"15%","description":"some description"},{"name":"Mango Pickle","image":"https://www.indianhealthyrecipes.com/wp-content/uploads/2015/03/mango-pickle-recipe-9-500x500.jpg","imgFlg":"true","rate":"225.00","oldrate":"250.00","qty":"330gms"},{"name":"Ruchi Mixed Pickle","image":"https://21pickles.com/wp-content/uploads/2017/08/mixed-vegetable-pickle1.jpg","imgFlg":"true","rate":"300.00","oldrate":"320.00","qty":"330gms","discount":"10%","description":"some description"}]
+
+
+
+
+ this.categoryproductsService.getAll().snapshotChanges().pipe(
+      map(changes =>
+        changes.map(c =>  
+          /* ({ key: c.payload.key, ...c.payload.val()}) */
+          {                
+            const xx = c.payload.val();
+            const yy = Object.keys(xx);
+            console.log('====================================================='); 
+            for(let i=0;i<yy.length;i++){
+              var k = yy[i];
+             if(xx[k].items === undefined){               
+             }else{
+              this.final.push({ key: c.payload.key,$key:k, items:xx[k].items});
+             }             
+            }
+            console.log('FINAL ITEMS :: '+JSON.stringify(this.final));
+            console.log('=====================================================');                      
+          }
+        )
+      )
+    ).subscribe(data => { 
+      this.catss = this.final.length;  
+      //console.log('------ DATA ------->>>> :::: '+JSON.stringify(data));
+
+     /*  alert('success');
+      this.router.navigateByUrl('/categorys'); */
+    });

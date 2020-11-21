@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="navy">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="gotoBillCartList(cartItemsToDBx)">
+        <ion-badge style="font-size: 15px;color:white;padding:5px" color="red">{{totalAmtx | currency:'INR'}}
+        </ion-badge>
+        <span style="font-size: 10px;background: yellow;color:navy;border-radius: 50%;padding:5px;
+          margin-top:-12px">{{totalQtyx}}</span>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="cookie text-exampleImgXXX" style="font-size: 25px;">Invoice - Bill</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="animated slideInRight">
+  <!-- <ion-list *ngFor="let item of cartItemsToDBx;let i = index"
+  class="animated slideInUp _{{i}}"> -->
+  <ion-list *ngFor="let item of cartItemsToDBxTable;let i = index"
+  class="animated slideInUp _{{i}}">
+
+    <ion-item style="margin-top:-10px">
+      <ion-avatar slot="start" style="height:55px;width:55px;">
+        <img src="{{item.image}}">
+      </ion-avatar>
+      <h3 slot="end" class="customfont titlex2">
+        <!-- <ion-badge style="font-size: 10px;color:white;padding:5px" color="orange">{{item.amtx | currency:'INR'}} -->
+          <ion-badge style="font-size: 10px;color:white;padding:5px" color="orange">{{item.amtwithdiscx | currency:'INR'}}
+          <span class="customfont titlex2" style="color:white">({{item.qtyx}} Nos.)</span>
+        </ion-badge>
+        <ion-grid style="text-align: center;">
+          <ion-row>
+            <ion-col size="4" style="border:0">
+              <ion-button color="green" (click)="decrementQty(item)" expand="block" fill="outline" shape="round"
+                style="width:40px;">
+                <span style="font-size: 25px;font-weight: bold;color:red">-</span>
+              </ion-button>
+            </ion-col>
+            <ion-col size="4" style="border:0">
+            </ion-col>
+            <ion-col size="4" style="border:0">
+              <ion-button class="buttonx" color="green" (click)="incrementQty(item)" expand="block" fill="outline"
+                shape="round" style="width:40px;margin-left:-5px">
+                <span style="font-size: 25px;font-weight: bold;color:green;">+</span>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </h3>
+      <ion-label>
+        <h2 class="cookie titlex">{{item.name}}</h2>
+        <p class="customfont titlex2">Rs {{item.rate}}
+          <span class="customfont titlex3">{{item.oldrate}}</span>
+        </p>
+        <p class="customfont titlex2" style="margin-top:-5px">{{item.qty}}
+        </p>
+        <p class="customfont titlex2" style="color:red">{{item.discount}}%(discount)
+        </p>
+       
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <div class="ion-text-center" *ngIf="totalQtyx != 0">
+    <ion-button color="navy" (click)="submitBill(cartItemsToDBx)">
+      <ion-icon slot="icon-only" name="add"></ion-icon>&nbsp;Submit
+    </ion-button>
+  </div>
+  <div class="ion-text-center centervhx" *ngIf="totalQtyx === 0">
+    <span class="cookie" style="font-size: 35px;">Cart Empty!</span>
+    <p class="cookie buttonx" style="font-size: 25px;" (click)="gotoBack()">Go to Menu</p>
+  </div>
+</ion-content>

@@ -1,0 +1,231 @@
+ /* ==================== FONTS =================================== */
+
+ .ralewaydotsregular{
+    font-family:"RalewayDots-Regular";
+  }
+  
+  .cookie{
+    font-family:"Cookie Regular";
+  }
+  
+  .customfont{
+    font-family:"customfont";
+  }
+  
+  .delvonthin{
+    font-family:"Delvon Thin";
+  }
+  
+  .SHAIMAADEMORegular{
+    font-family:"SHAIMAADEMORegular";
+  }
+  /* ==================== FONTS =================================== */
+  .text-exampleImgXXX { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 100%; 
+    height:100%;
+    text-align: center; 
+    position: relative;
+    display: inline-block; 
+    padding:0px;
+    margin:0px;
+  }
+  
+//===============************* SHELL RELATED *******========================
+.xx{
+    animation-name: cf3FadeInOut;
+    animation-timing-function: ease-in-out;
+    /* animation-iteration-count: infinite; */
+    animation-duration: 2s;
+    /* animation-direction: alternate; */
+}
+@keyframes cf3FadeInOut {
+    0% {
+    opacity:0.1;
+  }
+  45% {
+  opacity:0.25;
+  }
+  55% {
+  opacity:0.5;
+  }
+  100% {
+  opacity:1;
+  }
+  }
+  //=================== CIRCLE ION-IMAGE ==============================
+  .ionimg-curved{
+    border-radius: 10px !important;
+    overflow: hidden; 
+  }
+  .ionimg-circle{   
+    border-radius: 50% !important;
+    overflow: hidden;
+  }
+  //ALSO IN THE FILE src\app\progressive-shell-resolver\shell-elements.scss....UNCOMMENT THE FOLLOWING
+   /* =========== FOR CIRCLED SHELL UNCOMMENT THIS =========== */
+  /* border-radius: 50% !important;
+  overflow: hidden; */
+  /* =========== FOR CIRCLED SHELL UNCOMMENT THIS =========== */
+  //=================== CIRCLE ION-IMAGE ==============================
+
+  //===============************* SHELL RELATED *******========================
+/*   .header-banner{		
+		height:200px;
+		min-height:100px;
+    background:red;
+    column-fill: auto;
+  } */
+  .rotated {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    /* background-color: #3e6ac2; */
+  }
+  .titlex3{
+    color:#d10d48;
+    margin-top:5px;
+    font-size: 12px;
+    text-decoration: line-through;
+
+  }
+  .titlex2{
+    color:#0f0e0f;
+    margin-top:5px;
+    font-size: 14px;
+  }
+
+  .titlex4{
+    color:#d8abb8;
+    margin-top:5px;
+    font-size: 12px;
+    text-decoration: line-through;
+  }
+  .titlex5{
+    color:#15490e;
+    margin-top:5px;
+    font-size: 12px;
+  }
+
+  .ion-color-badgex {
+    --ion-color-base: #18184d;
+    --ion-color-base-rgb: 200,223,32;
+    --ion-color-contrast: #000000;
+    --ion-color-contrast-rgb: 0,0,0;
+    --ion-color-shade: #b0c41c;
+    --ion-color-tint: #cee236;
+  }
+  .ion-color-badgexx {
+    --ion-color-base: orange;
+    --ion-color-base-rgb: 200,223,32;
+    --ion-color-contrast: #000000;
+    --ion-color-contrast-rgb: 0,0,0;
+    --ion-color-shade: #b0c41c;
+    --ion-color-tint: #cee236;
+  }
+
+  .ion-color-badgexxx {
+    --ion-color-base: #0b3507;
+    --ion-color-base-rgb: 200,223,32;
+    --ion-color-contrast: #000000;
+    --ion-color-contrast-rgb: 0,0,0;
+    --ion-color-shade: #b0c41c;
+    --ion-color-tint: #cee236;
+  }
+ /*  ion-badge {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    vertical-align: bottom;
+   } */
+   //==========================
+   .my-item {
+     background: #013b01;
+     width:90px;
+     margin-top: 5px;
+    ion-badge {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline
+    }
+}
+.my-item1 {
+  background: navy;
+  width:60px;
+  margin-top: 5px;
+ ion-badge {
+     display: flex;
+     flex-direction: row;
+     align-items: baseline
+ }
+}
+
+.padd{
+  border:1px solid navy;
+  border-radius: 5px;
+  margin:1px;
+  
+}
+
+
+//==========================================
+/* ion-avatar { 
+  width:100% !important;  
+  height : 100% !important;  
+  max-width: 100px !important;  //any size
+  max-height: 100px !important; //any size 
+} */
+
+//<!-- ================== WORKING PERFECT xxxxxxxxxxxxx========================= -->
+
+ion-col{
+  //--ion-grid-columns:12;//this is by default...12 columns per row..we can change it to whatever we want
+  --ion-grid-columns:12;//this is by default...12 columns per row..we can change it to whatever we want
+  background: white;
+  text-align: center;
+  /* border:1px solid navy; */
+  /* margin:10px; */
+ /*  margin:1px; */
+ /*  border-radius: 15px;
+  padding: 2px; */
+}
+ion-grid{
+  --ion-grid-padding:0;
+  --ion-grid-column-padding:0;
+  /* --ion-grid-width-xl:360px; */
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+//<!-- ================== WORKING PERFECT xxxxxxxxxxxxx========================= -->
+
+.ion-color-badgexxxx {
+  --ion-color-base: red;
+  --ion-color-base-rgb: 200,223,32;
+  --ion-color-contrast: #000000;
+  --ion-color-contrast-rgb: 0,0,0;
+  --ion-color-shade: #b0c41c;
+  --ion-color-tint: #cee236;
+}
+.ion-color-badgexxxxx {
+  --ion-color-base: navy;
+  --ion-color-base-rgb: 200,223,32;
+  --ion-color-contrast: #000000;
+  --ion-color-contrast-rgb: 0,0,0;
+  --ion-color-shade: #b0c41c;
+  --ion-color-tint: #cee236;
+}
+.ion-color-badgexxxxxx {
+  --ion-color-base: #920787;
+  --ion-color-base-rgb: 200,223,32;
+  --ion-color-contrast: #000000;
+  --ion-color-contrast-rgb: 0,0,0;
+  --ion-color-shade: #b0c41c;
+  --ion-color-tint: #cee236;
+}
